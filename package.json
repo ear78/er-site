@@ -1,0 +1,31 @@
+{
+  "name": "er-site",
+  "version": "1.0.0",
+  "description": "Portfolio site designed and built from the ground up with HTML, CSS, Javascript, Jquery, Gulp, Sass.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ear78/er-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ear78/er-site/issues"
+  },
+  "homepage": "https://github.com/ear78/er-site#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "gulp-install": "^0.6.0",
+    "gulp-sass": "^3.0.0",
+    "massive": "^2.5.0"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1"
+  }
+}
