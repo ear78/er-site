@@ -48,17 +48,21 @@ table {
 
 /*
 
+FONTS TO CHOOSE
+
 font-family: 'Montserrat', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Open Sans', sans-serif;
+
 */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
 body {
-  color: #fff;
-  font-size: 15px;
+  color: #101010;
+  font-size: 16px;
+  line-height: 1.2;
   font-family: 'Nunito Sans', sans-serif; }
 
 li {
@@ -72,19 +76,96 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.25em; }
 
+h2 {
+  font-size: 3.5em;
+  font-weight: 600; }
+
 h4 {
+  color: #696969;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1em; }
+
+.inner-wrap {
+  width: 95%;
+  margin: 0 auto; }
+
+.margin-bottom {
+  margin-bottom: 80px; }
+
+.hero-image {
+  background-image: url("../../img/clouds1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 60px; }
+  .hero-image .site-title {
+    font-size: 4em;
+    color: #fff; }
+  .hero-image .site-subtitle {
+    color: lightseagreen; }
+  .hero-image .button {
+    border: 2px solid lightseagreen;
+    padding: 12px 25px;
+    background: none;
+    width: 250px;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    color: lightseagreen;
+    text-transform: uppercase; }
+
+.summary-skills .elliot-pic-container {
+  text-align: center;
+  margin-bottom: 60px; }
+  .summary-skills .elliot-pic-container .elliot-pic {
+    max-width: 170px;
+    border-radius: 50%; }
+
+.summary-skills .skills-icons {
+  text-align: center; }
+  .summary-skills .skills-icons .skills-img {
+    height: 55px;
+    margin: 0px 15px 15px; }
+
+.summary-skills .summary-content {
+  text-align: center; }
+  .summary-skills .summary-content .hi {
+    color: #696969;
+    font-size: 1.35em;
+    margin: 20px; }
+
+.summary-skills .section-titles {
+  text-align: center; }
+
+.summary-skills .skills-list {
+  display: flex;
+  justify-content: space-around;
+  min-height: 175px; }
+  .summary-skills .skills-list .box-left,
+  .summary-skills .skills-list .box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+footer {
+  height: 300px;
+  width: 100%;
+  background: #101010; }
 
 .main-header-container {
   display: flex;
   justify-content: space-between;
-  background: #262626; }
-
-.hero-image {
-  background-image: url("../../img/clouds.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 500px;
-  width: 100%; }
+  background: #101010;
+  min-height: 60px;
+  align-items: center; }
+  .main-header-container .main-nav-container {
+    display: flex; }
+    .main-header-container .main-nav-container li {
+      margin: 2px 10px; }
+  .main-header-container .main-logo-container img {
+    width: 40px; }

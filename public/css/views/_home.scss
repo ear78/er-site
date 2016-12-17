@@ -1,0 +1,77 @@
+.hero-image {
+    background-image: url('../../img/clouds1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+    .site-title {
+        font-size: 4em;
+        color: #fff;
+    }
+    .site-subtitle {
+        color: lightseagreen;
+    }
+    .button {
+        border: 2px solid lightseagreen;
+        padding: 12px 25px;
+        background: none;
+        width: 250px;
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+        color: lightseagreen;
+        text-transform: uppercase;
+    }
+}
+
+.summary-skills {
+    .elliot-pic-container {
+        text-align: center;
+        margin-bottom: 60px;
+        .elliot-pic {
+            max-width: 170px;
+            border-radius: 50%;
+        }
+    }
+    .skills-icons {
+        text-align: center;
+        .skills-img {
+            // max-width: 100px;
+            height: 55px;
+            margin: 0px 15px 15px;
+        }
+    }
+    .summary-content {
+        text-align: center;
+        .hi {
+            color: #696969;
+            font-size: 1.35em;
+            margin: 20px;
+        }
+    }
+    .section-titles {
+        text-align: center;
+    }
+    .skills-list {
+        display: flex;
+        justify-content: space-around;
+        min-height: 175px;
+        .box-left,
+        .box-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background: $black;
+}

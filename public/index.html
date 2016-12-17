@@ -5,15 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Elliot Richardson Front End Developer</title>
 
+        <!-- ICONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- CSS BUILD SASS -->
         <link rel="stylesheet" type="text/css" href="./build/css/main.css">
-
     </head>
 
     <body ng-controller="MainCtrl">
         <main class="main-wrapper">
             <header class="main-header-container">
-                <div class="main-logo-container">logo</div>
+                <div class="main-logo-container">
+                    <img ng-src="./img/earlogo1white.svg"/>
+                </div>
                 <nav class="main-nav-container">
                     <a href="#"><li>About</li></a>
                     <a href="#"><li>Portfolio</li></a>
@@ -21,9 +25,69 @@
                 </nav>
             </header>
             <section class="hero-image">
-                <h1>Elliot Richardson</h1>
-                <h4>Front End Developer</h4>
+                <h1 class="site-title">Elliot Richardson</h1>
+                <h4 class="site-subtitle">Front End Developer</h4>
             </section>
+            <section class="summary-skills inner-wrap">
+                <div class="elliot-pic-container">
+                    <img class="elliot-pic" ng-src="./img/elliotpic.jpg">
+                </div>
+                <div class="summary-content margin-bottom">
+                    <h4 class="hi">HI, I'M ELLIOT RICHARDSON!</h4>
+                    <p>A Front End Web Developer focused on elegant design and user experience. Currently I am interested in joining a great team that I can grow with or freelance projects ranging from personal to small business sites. Let me help you look great on the web. </p>
+                    <div class="button"></div>
+                </div>
+                <h2 class="section-titles margin-bottom">Skills</h2>
+                <div class="skills-icons margin-bottom">
+                    <img class="skills-img" ng-src="./img/html5-blk.png"/>
+                    <img class="skills-img" ng-src="./img/css3-blk.png"/>
+                    <img class="skills-img" ng-src="./img/javascript-blk.png"/>
+                    <img class="skills-img" ng-src="./img/angular-color-blk.png"/>
+                    <img class="skills-img" ng-src="./img/nodejs-logo-blk.png"/>
+                    <img class="skills-img" ng-src="./img/React.js_logo-blk.png"/>
+                    <img class="skills-img" ng-src="./img/gulp-blk.png"/>
+                    <img class="skills-img" ng-src="./img/sass-blu.png"/>
+                </div>
+                <div class="skills-list">
+                    <div class="box-left">
+                        <ul>
+                            <li>CSS</li>
+                            <li>Angular</li>
+                            <li>HTML 5</li>
+                            <li>Javascript</li>
+                        </ul>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                            <li>Git</li>
+                            <li>Jquery</li>
+                        </ul>
+                    </div>
+                    <div class="box-right">
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Sass</li>
+                            <li>React</li>
+                            <li>WordPress</li>
+                        </ul>
+                        <ul>
+                            <li>Gulp</li>
+                            <li>SQL</li>
+                            <li>Affinity Suite</li>
+                            <li>Adobe</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <ul class="social-icons">
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </ul>
+            </footer>
 
             <ui-view></ui-view>
 

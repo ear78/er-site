@@ -1,20 +1,28 @@
 /*
 
+FONTS TO CHOOSE
+
 font-family: 'Montserrat', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Open Sans', sans-serif;
+
 */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans:200|Open+Sans');
 
+//// SASS COLOR VARIABLES /////
+$darkgray: #696969;
+$seagreen: lightseagreen;
+$black: #101010;
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 body {
-    color: #fff;
-    font-size: 15px;
+    color: $black;
+    font-size: 16px;
+    line-height: 1.2;
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -32,7 +40,23 @@ h1 {
     font-size: 3.25em;
 }
 
+h2 {
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
 h4 {
+    color: $darkgray;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1em;
+}
+
+///// GENERAL STYLES /////////////////////
+
+.inner-wrap {
+    width: 95%;
+    margin: 0 auto;
+}
+.margin-bottom {
+    margin-bottom: 80px;
 }
