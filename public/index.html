@@ -14,6 +14,15 @@
 
     <body ng-controller="MainCtrl">
         <main class="main-wrapper">
+            <!-- MOBILE HEADER MENU -->
+            <header class="mobile-main-header-container">
+                <div class="main-logo-container">
+                    <img ng-src="./img/earlogo1white.svg"/>
+                </div>
+                <img class="hamburger" ng-src="./img/ic_menu_white_24px.svg"/>
+            </header>
+
+            <!-- DESKTOP HEADER MENU -->
             <header class="main-header-container">
                 <div class="main-logo-container">
                     <img ng-src="./img/earlogo1white.svg"/>
@@ -24,11 +33,19 @@
                     <a href="#"><li>Contact</li></a>
                 </nav>
             </header>
-            <section class="hero-image">
+
+            <!-- HERO IMAGE AND SITE TITLE -->
+            <section class="hero-image margin-bottom">
                 <h1 class="site-title">Elliot Richardson</h1>
                 <h4 class="site-subtitle">Front End Developer</h4>
             </section>
             <section class="summary-skills inner-wrap">
+                <ul>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </ul>
                 <div class="elliot-pic-container">
                     <img class="elliot-pic" ng-src="./img/elliotpic.jpg">
                 </div>
@@ -48,7 +65,7 @@
                     <img class="skills-img" ng-src="./img/gulp-blk.png"/>
                     <img class="skills-img" ng-src="./img/sass-blu.png"/>
                 </div>
-                <div class="skills-list">
+                <div class="skills-list margin-bottom">
                     <div class="box-left">
                         <ul>
                             <li>CSS</li>
@@ -57,8 +74,8 @@
                             <li>Javascript</li>
                         </ul>
                         <ul>
-                            <li>Javascript</li>
-                            <li>Bootstrap</li>
+                            <li>Bootstrap </li>
+                            <li>NPM</li>
                             <li>Git</li>
                             <li>Jquery</li>
                         </ul>
