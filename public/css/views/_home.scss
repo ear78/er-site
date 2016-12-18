@@ -1,20 +1,24 @@
 .hero-image {
-    background-image: url('../../img/clouds1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('../../img/clouds1.jpg');
+
+    // background-image: url('../../img/clouds1.jpg');
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 350px;
+    min-height: 410px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 60px;
+    justify-content: flex-end;
     .site-title {
-        font-size: 4em;
+        font-size: 3em;
         color: #fff;
     }
     .site-subtitle {
         color: lightseagreen;
+        margin-bottom: 30px;
     }
     .button {
         border: 2px solid lightseagreen;
@@ -32,9 +36,9 @@
 .summary-skills {
     .elliot-pic-container {
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 25px;
         .elliot-pic {
-            max-width: 170px;
+            max-width: 160px;
             border-radius: 50%;
         }
     }
@@ -44,6 +48,10 @@
             // max-width: 100px;
             height: 55px;
             margin: 0px 15px 15px;
+            transition: all .1s ease;
+        }
+        .skills-img:hover {
+            transform: scale(1.1);
         }
     }
     .summary-content {
@@ -66,6 +74,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+        }
+        ul {
+            font-weight: 600;
         }
     }
 }
