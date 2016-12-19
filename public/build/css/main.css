@@ -158,9 +158,77 @@ h4 {
     font-weight: 600; }
 
 footer {
-  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  min-height: 430px;
   width: 100%;
   background: #262626; }
+  footer .built {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: .8em;
+    text-transform: uppercase;
+    font-weight: 600; }
+  footer .main-logo-container {
+    margin-bottom: 50px; }
+    footer .main-logo-container img {
+      width: 100px; }
+  footer .site-map {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .site-map a {
+      margin: 10px 0px;
+      text-transform: uppercase;
+      font-size: .9em;
+      transition: all .2s; }
+  footer .to-top {
+    width: 40px;
+    height: 40px;
+    border: 2px solid gray;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.3;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    transition: all .3s ease; }
+    footer .to-top i {
+      font-size: 20px; }
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px; }
+    footer .social-icons a {
+      width: 55px;
+      height: 55px;
+      border: 2px solid gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0 15px;
+      transition: all .3s ease; }
+    footer .social-icons i {
+      font-size: 20px; }
+  footer .site-link {
+    color: lightseagreen;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .75em; }
+
+footer .to-top:hover,
+footer .social-icons a:hover {
+  border: 2px solid #fff; }
+
+footer .site-map a:hover {
+  color: #d3d3d3; }
 
 .mobile-main-header-container {
   position: fixed;
