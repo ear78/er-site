@@ -219,7 +219,7 @@ h4 {
 .portfolio-container .project-thumb {
   margin-right: 8%; }
   .portfolio-container .project-thumb img {
-    width: 90px; }
+    width: 60px; }
 
 .portfolio-container .project-name {
   color: lightgray;
@@ -238,7 +238,7 @@ h4 {
   .contact-container .email-icon {
     margin-bottom: 15px; }
     .contact-container .email-icon img {
-      width: 50px; }
+      width: 47px; }
   .contact-container .contact-title {
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -374,3 +374,51 @@ footer .site-map a:hover {
     width: 35px; }
   .main-header-container .hamburger {
     width: 28px; }
+
+.close-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.close-menu:hover {
+  cursor: pointer; }
+
+.mobile-menu-modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: fixed;
+  z-index: 4;
+  opacity: 0.9;
+  overflow: hidden; }
+
+.mobile-menu-container {
+  position: fixed;
+  background: #fff;
+  color: #262626;
+  width: 300px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 5;
+  padding-top: 50px;
+  text-align: center;
+  transform: translate3d(305px, 0, 0);
+  transition: transform .25s ease; }
+  .mobile-menu-container a {
+    color: #696969; }
+  .mobile-menu-container a:hover {
+    color: #262626; }
+  .mobile-menu-container li {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8em;
+    margin: 10px 0px; }
+  .mobile-menu-container .main-logo-container img {
+    width: 80px; }
+
+.open-mobile-menu {
+  display: block;
+  transform: translate3d(0, 0, 0); }
