@@ -52,8 +52,6 @@ FONTS TO CHOOSE
 
 font-family: 'Montserrat', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
-font-family: 'Open Sans', sans-serif;
-
 */
 * {
   box-sizing: border-box;
@@ -101,7 +99,8 @@ h4 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin-bottom: 30px; }
   .hero-image .site-title {
     font-size: 3em;
     color: #fff; }
@@ -118,6 +117,43 @@ h4 {
     text-align: center;
     color: lightseagreen;
     text-transform: uppercase; }
+
+.summary-skills .social-container-dark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 45px; }
+  .summary-skills .social-container-dark .black-box {
+    min-width: 100px;
+    height: 35px;
+    background: #262626;
+    color: #fff;
+    text-align: center;
+    line-height: 1.9;
+    position: absolute;
+    left: 0;
+    font-size: 1.125em;
+    transform: translate3d(-70px, 0, 0);
+    transition: all .2s ease; }
+    .summary-skills .social-container-dark .black-box span {
+      padding-right: 10px;
+      padding-left: 25px; }
+  .summary-skills .social-container-dark .black-box:hover {
+    transform: translate3d(0px, 0, 0);
+    cursor: pointer;
+    padding-left: 10px;
+    background: lightseagreen; }
+
+.summary-skills .social-icons-dark a {
+  color: #262626;
+  transition: all .2s ease; }
+
+.summary-skills .social-icons-dark i {
+  font-size: 18px;
+  margin: 2px 5px; }
+
+.summary-skills .social-icons-dark a:hover {
+  color: lightseagreen; }
 
 .summary-skills .elliot-pic-container {
   text-align: center;
@@ -157,6 +193,78 @@ h4 {
   .summary-skills .skills-list ul {
     font-weight: 600; }
 
+.projects-container {
+  margin-bottom: 55px; }
+
+.projects-banner-image {
+  background: url("../../img/beachpic1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 30px; }
+  .projects-banner-image h2 {
+    font-weight: 200; }
+
+.portfolio-container .project-box {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px; }
+
+.portfolio-container .project-thumb {
+  margin-right: 8%; }
+  .portfolio-container .project-thumb img {
+    width: 90px; }
+
+.portfolio-container .project-name {
+  color: lightgray;
+  text-transform: uppercase; }
+
+.portfolio-container .project-plus-icon {
+  position: absolute;
+  right: 30px;
+  font-size: 24px;
+  line-height: .4; }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contact-container .email-icon {
+    margin-bottom: 15px; }
+    .contact-container .email-icon img {
+      width: 50px; }
+  .contact-container .contact-title {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    color: #262626; }
+  .contact-container p {
+    max-width: 330px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: .75em;
+    color: #737373; }
+  .contact-container a {
+    width: 70%;
+    margin-bottom: 55px; }
+    .contact-container a .contact-button {
+      width: 100%;
+      background: #262626;
+      padding: 13px;
+      color: #fff;
+      border-radius: 2px;
+      text-transform: uppercase;
+      font-size: .9em;
+      text-align: center; }
+
 footer {
   position: relative;
   display: flex;
@@ -170,7 +278,7 @@ footer {
   footer .built {
     color: #fff;
     margin-bottom: 40px;
-    font-size: .8em;
+    font-size: .75em;
     text-transform: uppercase;
     font-weight: 600; }
   footer .main-logo-container {
