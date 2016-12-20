@@ -40,7 +40,7 @@
         .black-box {
             min-width: 100px;
             height: 35px;
-            background: #262626;
+            background: $darkblack;
             color: #fff;
             text-align: center;
             line-height: 1.9;
@@ -49,6 +49,7 @@
             font-size: 1.125em;
             transform: translate3d(-70px, 0, 0);
             transition: all .2s ease;
+            z-index: 3;
             span {
                 padding-right: 10px;
                 padding-left: 25px;
@@ -203,7 +204,7 @@
         margin-bottom: 55px;
         .contact-button {
             width: 100%;
-            background: #262626;
+            background: $darkblack;
             padding: 13px;
             color: #fff;
             border-radius: 2px;
@@ -226,7 +227,7 @@ footer {
     padding-bottom: 20px;
     min-height: 430px;
     width: 100%;
-    background: $black;
+    background: $darkblack;
     .built {
         color: #fff;
         margin-bottom: 40px;
