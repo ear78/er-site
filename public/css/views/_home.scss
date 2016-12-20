@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-bottom: 30px;
     .site-title {
         font-size: 3em;
         color: #fff;
@@ -31,6 +32,51 @@
 }
 
 .summary-skills {
+    .social-container-dark {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 45px;
+        .black-box {
+            min-width: 100px;
+            height: 35px;
+            background: #262626;
+            color: #fff;
+            text-align: center;
+            line-height: 1.9;
+            position: absolute;
+            left: 0;
+            font-size: 1.125em;
+            transform: translate3d(-70px, 0, 0);
+            transition: all .2s ease;
+            span {
+                padding-right: 10px;
+                padding-left: 25px;
+            }
+        }
+        .black-box:hover {
+            transform: translate3d(0px, 0, 0);
+            cursor: pointer;
+            padding-left: 10px;
+            background: $seagreen;
+        }
+    }
+    .social-icons-dark {
+            a {
+            color: $black;
+            transition: all .2s ease;
+        }
+        i {
+            font-size: 18px;
+            margin: 2px 5px;
+        }
+    }
+//// HOVER STATE DARK ICONS /////////////
+    .social-icons-dark {
+        a:hover {
+            color: $seagreen;
+        }
+    }
     .elliot-pic-container {
         text-align: center;
         margin-bottom: 25px;
@@ -78,6 +124,99 @@
     }
 }
 
+//// PROJECTS SECTION //////////////////////
+.projects-container {
+    margin-bottom: 55px;
+}
+
+.projects-banner-image {
+    background: url('../../img/beachpic1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 30px;
+    h2 {
+        font-weight: 200;
+    }
+}
+
+.portfolio-container {
+    .project-box {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 10px;
+    }
+    .project-thumb {
+        margin-right: 8%;
+        img {
+            width: 90px;
+        }
+    }
+    .project-name {
+        color: lightgray;
+        text-transform: uppercase;
+    }
+    .project-plus-icon {
+        position: absolute;
+        right: 30px;
+        font-size: 24px;
+        line-height: .4;
+    }
+
+}
+
+
+//// GET IN CONTACT SECTION /////////////////
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .email-icon {
+        margin-bottom: 15px;
+        img {
+            width: 50px;
+        }
+    }
+    .contact-title {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1em;
+        color: #262626;
+    }
+    p {
+        max-width: 330px;
+        text-align: center;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-size: .75em;
+        color: #737373;
+    }
+    a {
+        width: 70%;
+        margin-bottom: 55px;
+        .contact-button {
+            width: 100%;
+            background: #262626;
+            padding: 13px;
+            color: #fff;
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-size: .9em;
+            text-align: center;
+        }
+    }
+}
+
+
+//// FOOTER SECTION /////////////////////////
+
 footer {
     position: relative;
     display: flex;
@@ -91,7 +230,7 @@ footer {
     .built {
         color: #fff;
         margin-bottom: 40px;
-        font-size: .8em;
+        font-size: .75em;
         text-transform: uppercase;
         font-weight: 600;
     }
