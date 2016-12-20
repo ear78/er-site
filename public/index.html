@@ -12,14 +12,15 @@
         <link rel="stylesheet" type="text/css" href="./build/css/main.css">
     </head>
 
-    <body ng-controller="MainCtrl">
+    <body ng-controller="MainCtrl" ng-cloak>
         <main class="main-wrapper">
+
             <!-- MOBILE HEADER MENU -->
             <header class="mobile-main-header-container">
                 <div class="main-logo-container">
                     <img ng-src="./img/earlogo1white.svg"/>
                 </div>
-                <img class="hamburger" ng-src="./img/ic_menu_white_24px.svg"/>
+                <img class="hamburger" ng-src="./img/ic_menu_white_24px.svg" ng-click="openMobileMenu()"/>
             </header>
 
             <!-- DESKTOP HEADER MENU -->
@@ -33,6 +34,8 @@
                     <a href="#"><li>Contact</li></a>
                 </nav>
             </header>
+
+            <mobile-menu-directive></mobile-menu-directive>
 
             <!-- HERO IMAGE AND SITE TITLE -->
             <section class="hero-image">
@@ -183,5 +186,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
         <script src="./js/app.js"></script>
         <script src="./js/controllers/MainCtrl.js"></script>
+        <script src="./js/directives/mobileMenuDirective.js"></script>
     </body>
 </html>
