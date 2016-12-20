@@ -407,6 +407,9 @@ footer .site-map a:hover {
   text-align: center;
   transform: translate3d(305px, 0, 0);
   transition: transform .25s ease; }
+  .mobile-menu-container nav {
+    margin-bottom: 25px;
+    transform: translate3d(0, 50px, 0); }
   .mobile-menu-container a {
     color: #696969; }
   .mobile-menu-container a:hover {
@@ -416,9 +419,15 @@ footer .site-map a:hover {
     font-weight: 600;
     font-size: .8em;
     margin: 10px 0px; }
-  .mobile-menu-container .main-logo-container img {
-    width: 80px; }
+  .mobile-menu-container .main-logo-container {
+    transform: translate3d(0, 50px, 0); }
+    .mobile-menu-container .main-logo-container img {
+      width: 80px; }
 
 .open-mobile-menu {
   display: block;
   transform: translate3d(0, 0, 0); }
+
+.mobile-menu-container .slide {
+  transform: translate3d(0, 0, 0);
+  transition: transform .8s ease .015s; }

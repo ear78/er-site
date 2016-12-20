@@ -9,8 +9,10 @@ angular.module('myApp')
                 //ON CLICK EVENT TOGGLE
                 scope.openMobileMenu = function(){
                     scope.toggleMobileMenu = !scope.toggleMobileMenu;
+                    scope.toggle2 = !scope.toggle2;
                 }
 
+                scope.toggle2 = false;
                 //ON CLICK CLOSE EVENT
                 scope.closeMobileMenu = function(){
                     scope.toggleMobileMenu = !scope.toggleMobileMenu;
