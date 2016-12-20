@@ -3,7 +3,7 @@ angular.module('myApp')
         return {
             restrict: 'E',
             templateUrl: '../../views/directives/mobileMenuDirective.html',
-            link: function(scope, elem, attrs){
+            link: function(scope, element, attrs){
                 //SETTING VALUE FOR TOGGLE
                 scope.toggleMobileMenu = false;
                 //ON CLICK EVENT TOGGLE
