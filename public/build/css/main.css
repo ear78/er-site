@@ -100,13 +100,29 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  position: relative;
+  transition: all .2s ease; }
   .hero-image .site-title {
-    font-size: 3em;
+    text-transform: uppercase;
+    font-size: 3.25em;
     color: #fff; }
   .hero-image .site-subtitle {
+    text-transform: uppercase;
+    font-size: .9em;
     color: lightseagreen;
     margin-bottom: 30px; }
+  .hero-image img {
+    display: none;
+    width: 80px; }
+  .hero-image p {
+    display: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .75em;
+    position: absolute;
+    right: 25px;
+    bottom: 25px; }
   .hero-image .button {
     border: 2px solid lightseagreen;
     padding: 12px 25px;
@@ -211,26 +227,29 @@ h4 {
   .projects-banner-image h2 {
     font-weight: 200; }
 
-.portfolio-container .project-box {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid lightgray;
-  margin-bottom: 10px; }
+.portfolio-container {
+  transform: translate3d(-768px, 0, 0);
+  transition: all 1.5s ease; }
+  .portfolio-container .project-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px; }
+  .portfolio-container .project-thumb {
+    margin-right: 8%; }
+    .portfolio-container .project-thumb img {
+      width: 60px; }
+  .portfolio-container .project-name {
+    color: #262626;
+    text-transform: uppercase; }
+  .portfolio-container .project-plus-icon {
+    position: absolute;
+    right: 30px;
+    font-size: 24px;
+    line-height: .4; }
 
-.portfolio-container .project-thumb {
-  margin-right: 8%; }
-  .portfolio-container .project-thumb img {
-    width: 60px; }
-
-.portfolio-container .project-name {
-  color: lightgray;
-  text-transform: uppercase; }
-
-.portfolio-container .project-plus-icon {
-  position: absolute;
-  right: 30px;
-  font-size: 24px;
-  line-height: .4; }
+.portfolio-slide {
+  transform: translate3d(0, 0, 0); }
 
 .contact-container {
   display: flex;
@@ -339,6 +358,50 @@ footer .social-icons a:hover {
 footer .site-map a:hover {
   color: #d3d3d3; }
 
+@media (min-width: 760px) {
+  .hero-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../../img/clouds1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 510px; }
+    .hero-image .site-title {
+      font-size: 4.25em; }
+    .hero-image .site-subtitle {
+      margin-bottom: 0;
+      font-size: 1.125em; }
+    .hero-image img {
+      margin: 70px 0;
+      display: inline-block; }
+    .hero-image p {
+      display: block; }
+    .hero-image .name-underline:after {
+      content: '';
+      background: #fff;
+      width: 100%;
+      height: 1px;
+      display: block;
+      margin-top: 2px; }
+  .summary-skills .skills-list .box-left,
+  .summary-skills .skills-list .box-right {
+    justify-content: space-around;
+    width: 50%;
+    flex-direction: row; }
+  .summary-skills .elliot-pic-container {
+    margin-bottom: 30px; }
+  .summary-skills .skills-icons .skills-img {
+    height: 60px;
+    margin: 0px 2% 15px; }
+  .summary-content {
+    max-width: 550px;
+    margin: 0 auto 80px; }
+  .contact-container a {
+    width: 400px; }
+  .projects-banner-image h2 {
+    font-size: 4.125em; } }
+
 .mobile-main-header-container {
   position: fixed;
   width: 100%;
@@ -369,19 +432,30 @@ footer .site-map a:hover {
 
 .main-header-container {
   display: none;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 4;
   justify-content: space-between;
-  background: #262626;
   min-height: 60px;
   align-items: center;
   padding: 0 12px; }
   .main-header-container .main-nav-container {
     display: flex; }
     .main-header-container .main-nav-container li {
-      margin: 2px 10px; }
+      margin: 8px 20px;
+      font-size: .9em; }
   .main-header-container .main-logo-container img {
     width: 35px; }
   .main-header-container .hamburger {
     width: 28px; }
+
+@media (min-width: 760px) {
+  .mobile-main-header-container {
+    display: none; }
+  .main-header-container {
+    display: flex; } }
 
 .close-menu {
   position: absolute;
