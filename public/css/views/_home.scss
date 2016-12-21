@@ -10,13 +10,30 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 30px;
+    position: relative;
     .site-title {
-        font-size: 3em;
+        text-transform: uppercase;
+        font-size: 3.25em;
         color: #fff;
     }
     .site-subtitle {
+        text-transform: uppercase;
+        font-size: .9em;
         color: lightseagreen;
         margin-bottom: 30px;
+    }
+    img {
+        display: none;
+        width: 80px;
+    }
+    p {
+        display: none;
+        color: $white;
+        text-transform: uppercase;
+        font-size: .75em;
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
     }
     .button {
         border: 2px solid lightseagreen;
@@ -29,6 +46,7 @@
         color: lightseagreen;
         text-transform: uppercase;
     }
+    transition: all .2s ease;
 }
 
 .summary-skills {
@@ -147,6 +165,8 @@
 }
 
 .portfolio-container {
+    transform: translate3d(-768px, 0,0);
+    transition: all 1.5s ease;
     .project-box {
         display: flex;
         align-items: center;
@@ -160,7 +180,7 @@
         }
     }
     .project-name {
-        color: lightgray;
+        color: $black;
         text-transform: uppercase;
     }
     .project-plus-icon {
@@ -171,6 +191,12 @@
     }
 
 }
+
+.portfolio-slide {
+    transform: translate3d(0,0,0);
+}
+
+
 
 
 //// GET IN CONTACT SECTION /////////////////
@@ -304,4 +330,80 @@ footer .social-icons a:hover {
 
 footer .site-map a:hover {
     color: $lightgray;
+}
+
+
+@media(min-width: 760px) {
+    .hero-image {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)),
+        url('../../img/clouds1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 510px;
+        .site-title {
+            font-size: 4.25em;
+        }
+        .site-subtitle {
+            margin-bottom: 0;
+            font-size: 1.125em;
+        }
+        img {
+            margin: 70px 0;
+            display: inline-block;
+        }
+        p {
+            display: block;
+
+        }
+        .name-underline:after {
+            content: '';
+            background: $white;
+            width: 100%;
+            height: 1px;
+            display: block;
+            margin-top: 2px;
+        }
+
+
+    }
+
+    .summary-skills {
+        .skills-list {
+            .box-left,
+            .box-right {
+                justify-content: space-around;
+                width: 50%;
+                flex-direction: row;
+            }
+        }
+        .elliot-pic-container {
+            margin-bottom: 30px;
+        }
+        .skills-icons {
+            .skills-img {
+                height: 60px;
+                margin: 0px 2% 15px;
+            }
+        }
+    }
+
+    .summary-content {
+        max-width: 550px;
+        margin: 0 auto 80px;
+    }
+
+    .contact-container {
+        a {
+            width: 400px;
+        }
+    }
+
+    .projects-banner-image {
+        h2 {
+            font-size: 4.125em;
+        }
+    }
 }
