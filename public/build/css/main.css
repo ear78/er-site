@@ -237,7 +237,8 @@ h4 {
   align-items: center;
   justify-content: center;
   color: #fff;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  transition: all .2s ease; }
   .projects-banner-image h2 {
     font-weight: 200; }
 
@@ -265,6 +266,73 @@ h4 {
 
 .portfolio-slide {
   transform: translate3d(0, 0, 0); }
+
+.desktop-portfolio-container {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto; }
+  .desktop-portfolio-container .project-box {
+    margin: 0 1%;
+    width: 20%;
+    padding: 5px;
+    border: 1px solid lightgray; }
+    .desktop-portfolio-container .project-box img {
+      max-width: 100%; }
+    .desktop-portfolio-container .project-box p {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center; }
+
+.project-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .project-row .project-container1 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex; }
+  .project-row .project-container2 {
+    position: relative;
+    width: 90%;
+    margin: 0 auto; }
+  .project-row .box1 {
+    position: relative;
+    background: pink;
+    width: 90%;
+    min-height: 450px;
+    margin: 1%; }
+    .project-row .box1 .project-info-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      padding: 10px;
+      background: #fff;
+      opacity: 0;
+      transition: all .2s ease; }
+      .project-row .box1 .project-info-container .project-info-logo img {
+        width: 32px; }
+  .project-row .box2 {
+    position: relative;
+    background: lightblue;
+    min-height: 450px;
+    margin: 1%; }
+    .project-row .box2 .project-info-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      padding: 10px;
+      background: #fff;
+      opacity: 0;
+      transition: all .6s ease; }
+      .project-row .box2 .project-info-container .project-info-logo img {
+        width: 32px; }
 
 .contact-container {
   display: flex;
@@ -418,7 +486,9 @@ footer .site-map a:hover {
   .hero-image .site-title {
     font-size: 4.75em; }
   .hero-image img {
-    width: 80px; } }
+    width: 80px; }
+  .projects-banner-image {
+    min-height: 350px; } }
 
 .mobile-main-header-container {
   position: fixed;
