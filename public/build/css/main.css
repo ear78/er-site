@@ -78,6 +78,9 @@ h2 {
   font-size: 3.5em;
   font-weight: 600; }
 
+h3 {
+  font-size: 2.125em; }
+
 h4 {
   color: #696969;
   font-family: 'Nunito Sans', sans-serif;
@@ -93,6 +96,9 @@ h4 {
 
 .margin-bottom {
   margin-bottom: 80px; }
+
+.margin-bottom-mid {
+  margin-bottom: 60px; }
 
 .hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/clouds1.jpg");
@@ -125,8 +131,9 @@ h4 {
   .hero-image p {
     display: none;
     color: #fff;
-    font-size: .75em;
-    text-transform: uppercase; }
+    font-size: .65em;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
   .hero-image .created-by {
     display: none;
     color: #fff;
@@ -134,7 +141,8 @@ h4 {
     font-size: .65em;
     position: absolute;
     right: 25px;
-    bottom: 25px; }
+    bottom: 25px;
+    letter-spacing: 1px; }
     .hero-image .created-by span {
       border-bottom: 1px solid #fff; }
   .hero-image .button {
@@ -440,7 +448,8 @@ footer {
     color: lightseagreen;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: .75em; }
+    font-size: .75em;
+    letter-spacing: 2px; }
 
 footer .to-top:hover,
 footer .social-icons a:hover {
@@ -467,9 +476,7 @@ footer .site-map a:hover {
       display: inline-block; }
     .hero-image p {
       display: block;
-      color: #fff;
-      font-size: .75em;
-      text-transform: uppercase; }
+      color: #fff; }
     .hero-image .created-by {
       display: inline-block; }
   .summary-skills .skills-list .box-left,
@@ -477,6 +484,9 @@ footer .site-map a:hover {
     justify-content: space-around;
     width: 50%;
     flex-direction: row; }
+    .summary-skills .skills-list .box-left li,
+    .summary-skills .skills-list .box-right li {
+      margin: 5px 0px; }
   .summary-skills .elliot-pic-container {
     margin-bottom: 30px; }
   .summary-skills .skills-icons .skills-img {
@@ -566,7 +576,9 @@ footer .site-map a:hover {
       margin: 0 auto; }
     .main-header-container .main-nav-container li {
       margin: 8px 20px;
-      font-size: .9em; }
+      font-size: .65em;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
   .main-header-container .main-logo-container img {
     width: 35px; }
   .main-header-container .hamburger {
@@ -634,3 +646,76 @@ footer .site-map a:hover {
 .mobile-menu-container .slide-up {
   transform: translate3d(0, 0, 0);
   transition: transform .8s ease .015s; }
+
+.resume img {
+  width: 60px;
+  display: block;
+  margin: 80px auto 15px; }
+
+.resume .section-wrap {
+  width: 90%;
+  margin: 0 auto; }
+
+.resume .download-resume {
+  background: #101010;
+  padding: 20px;
+  color: #fff;
+  font-size: .75em;
+  text-transform: uppercase;
+  width: 140px;
+  display: block;
+  margin: 65px auto;
+  letter-spacing: 2px;
+  text-align: center; }
+
+.resume .main-title {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.resume .section-titles {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.resume .skills-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .resume .skills-list li {
+    padding: 0 10px; }
+  .resume .skills-list li:last-child {
+    border-right: none; }
+
+.resume .job-lists {
+  padding-left: 10px;
+  line-height: 1.5; }
+  .resume .job-lists li {
+    list-style-type: circle; }
+  .resume .job-lists .project-list {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: 2px;
+    margin-top: 8px; }
+
+.resume .job-title {
+  font-size: .85em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: gray;
+  margin-bottom: 5px; }
+
+@media (min-width: 760px) {
+  .resume .skills-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .resume .skills-list li {
+      border-right: 1px solid #d3d3d3; }
+  .section-titles {
+    text-align: left; } }
+
+@media (min-width: 1000px) {
+  .resume .skills-list {
+    justify-content: flex-start; } }
