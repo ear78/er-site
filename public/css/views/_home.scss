@@ -171,6 +171,7 @@
     justify-content: center;
     color: #fff;
     margin-bottom: 30px;
+    transition: all .2s ease;
     h2 {
         font-weight: 200;
     }
@@ -209,7 +210,98 @@
     transform: translate3d(0,0,0);
 }
 
+//////////////////////////////////////////////
+//// DESKTOP PORTFOLIO SECTION ///////////////
+//////////////////////////////////////////////
 
+.desktop-portfolio-container {
+    display: flex;
+    justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
+    .project-box {
+        margin: 0 1%;
+        width: 20%;
+        padding: 5px;
+        border: 1px solid lightgray;
+        img {
+            max-width: 100%;
+        }
+        p {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+
+//// PROJECTS PICTURE GRID SECTION ///////////
+.project-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .project-container1 {
+
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .project-container2 {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .box1 {
+        position: relative;
+        background: pink;
+        width: 90%;
+        min-height: 450px;
+        margin: 1%;
+        .project-info-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            padding: 10px;
+            background: #fff;
+            opacity: 0;
+            transition: all .2s ease;
+            .project-info-logo {
+                img {
+                    width: 32px;
+                }
+            }
+        }
+    }
+
+    .box2 {
+        position: relative;
+        background: lightblue;
+        min-height: 450px;
+        margin: 1%;
+        .project-info-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            padding: 10px;
+            background: #fff;
+            opacity: 0;
+            transition: all .6s ease;
+            .project-info-logo {
+                img {
+                    width: 32px;
+                }
+            }
+        }
+    }
+
+
+}
 
 
 //// GET IN CONTACT SECTION /////////////////
@@ -415,6 +507,8 @@ footer .site-map a:hover {
     }
 }
 
+
+
 @media(min-width: 1000px) {
     .hero-image {
         .site-title {
@@ -423,5 +517,8 @@ footer .site-map a:hover {
         img {
             width: 80px;
         }
+    }
+    .projects-banner-image {
+        min-height: 350px;
     }
 }
