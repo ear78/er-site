@@ -47,6 +47,10 @@ h2 {
     font-weight: 600;
 }
 
+h3 {
+    font-size: 2.125em;
+}
+
 h4 {
     color: $darkgray;
     font-family: 'Nunito Sans', sans-serif;
@@ -67,4 +71,8 @@ h4 {
 
 .margin-bottom {
     margin-bottom: 80px;
+}
+
+.margin-bottom-mid {
+    margin-bottom: 60px;
 }
