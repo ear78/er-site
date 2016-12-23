@@ -24,6 +24,14 @@
     margin: 80px auto;
     letter-spacing: 2px;
     text-align: center;
+    border: 1px solid $darkblack;
+    transition: all .3s ease;
+}
+
+.resume .download-resume:hover {
+    background: $bone;
+    color: $darkblack;
+    border: 1px solid $darkblack;
 }
 
 .resume .main-title {

@@ -262,13 +262,17 @@
     }
     .box1 {
         position: relative;
-        background: pink;
+        background: $darkblack;
         width: 90%;
         margin: 1%;
         box-shadow: 0px 0px 10px gray;
-        img {
+        .img-thumb {
             max-width: 100%;
             display: block;
+            transition: opacity .5s ease;
+        }
+        .img-thumb-fade {
+            opacity: .5;
         }
         //// HIDDEN UNTIL HOVER ///////////
         .project-info-container {
@@ -308,7 +312,7 @@
 
     .box2 {
         position: relative;
-        background: lightblue;
+        background: $darkblack;
         margin: 1%;
         box-shadow: 0px 0px 10px gray;
         img {

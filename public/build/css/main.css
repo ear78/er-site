@@ -310,13 +310,16 @@ h4 {
     margin: 0 auto; }
   .project-row .box1 {
     position: relative;
-    background: pink;
+    background: #101010;
     width: 90%;
     margin: 1%;
     box-shadow: 0px 0px 10px gray; }
-    .project-row .box1 img {
+    .project-row .box1 .img-thumb {
       max-width: 100%;
-      display: block; }
+      display: block;
+      transition: opacity .5s ease; }
+    .project-row .box1 .img-thumb-fade {
+      opacity: .5; }
     .project-row .box1 .project-info-container {
       display: flex;
       justify-content: space-between;
@@ -343,7 +346,7 @@ h4 {
       opacity: 1; }
   .project-row .box2 {
     position: relative;
-    background: lightblue;
+    background: #101010;
     margin: 1%;
     box-shadow: 0px 0px 10px gray; }
     .project-row .box2 img {
@@ -702,7 +705,14 @@ footer .site-map a:hover {
   display: inline-block;
   margin: 80px auto;
   letter-spacing: 2px;
-  text-align: center; }
+  text-align: center;
+  border: 1px solid #101010;
+  transition: all .3s ease; }
+
+.resume .download-resume:hover {
+  background: #f7f7f7;
+  color: #101010;
+  border: 1px solid #101010; }
 
 .resume .main-title {
   text-align: center; }
