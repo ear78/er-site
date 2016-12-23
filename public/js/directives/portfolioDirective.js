@@ -6,6 +6,7 @@ angular.module('myApp')
             link: function(){
                 $('.box1, .box2').hover(function(){
                     $(this).find('.project-info-container').toggleClass('info-active');
+                    $(this).find('.img-thumb').toggleClass('img-thumb-fade');
                 })
             }
         }
