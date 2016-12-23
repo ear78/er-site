@@ -6,7 +6,9 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans:200|Open+Sans');
+// @import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans:200|Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans:200');
 
 //// SASS COLOR VARIABLES /////
 $darkgray: #696969;
@@ -58,6 +60,10 @@ h4 {
 }
 
 ///// GENERAL STYLES /////////////////////
+
+.main-wrapper {
+    overflow-x: hidden;   
+}
 
 .inner-wrap {
     width: 95%;
