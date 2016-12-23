@@ -14,7 +14,7 @@
     position: relative;
     .site-title {
         text-transform: uppercase;
-        font-size: 3.25em;
+        font-size: 2.75em;
         color: #fff;
         transition: all .2s ease;
     }
@@ -157,9 +157,13 @@
     }
 }
 
+
+////////////////////////////////////////////
 //// PROJECTS SECTION //////////////////////
+///////////////////////////////////////////
+
 .projects-container {
-    margin-bottom: 55px;
+    margin-bottom: 70px;
 }
 
 .projects-banner-image {
@@ -180,6 +184,7 @@
 }
 
 .portfolio-container {
+    display: block;
     transform: translate3d(-1500px, 0,0);
     transition: all 1.5s ease;
     .project-box {
@@ -205,7 +210,6 @@
         font-size: 24px;
         line-height: .4;
     }
-
 }
 
 .portfolio-slide {
@@ -217,7 +221,7 @@
 //////////////////////////////////////////////
 
 .desktop-portfolio-container {
-    display: flex;
+    display: none;
     justify-content: center;
     max-width: 960px;
     margin: 0 auto;
@@ -237,7 +241,11 @@
     }
 }
 
+
+//////////////////////////////////////////////
 //// PROJECTS PICTURE GRID SECTION ///////////
+/////////////////////////////////////////////
+
 .project-row {
     width: 100%;
     display: flex;
@@ -257,6 +265,7 @@
         background: pink;
         width: 90%;
         margin: 1%;
+        box-shadow: 0px 0px 10px gray;
         img {
             max-width: 100%;
             display: block;
@@ -269,10 +278,21 @@
             position: absolute;
             bottom: 0px;
             width: 100%;
-            padding: 10px;
+            padding: 10px 15px;
+            min-height: 80px;
             background: #fff;
             opacity: 0;
+            font-size: .75em;
             transition: opacity .5s ease;
+            .project-info-left {
+                text-transform: uppercase;
+                font-weight: 600;
+                line-height: 1.9;
+                .tech {
+                    color: $lightgray;
+                    text-transform: none;
+                }
+            }
             .project-info-logo {
                 img {
                     width: 32px;
@@ -290,6 +310,7 @@
         position: relative;
         background: lightblue;
         margin: 1%;
+        box-shadow: 0px 0px 10px gray;
         img {
             max-width: 100%;
             display: block;
@@ -302,10 +323,21 @@
             position: absolute;
             bottom: 0px;
             width: 100%;
-            padding: 10px;
+            min-height: 80px;
+            font-size: .75em;
+            padding: 10px 15px;
             background: #fff;
             opacity: 0;
             transition: all .5s ease;
+            .project-info-left {
+                text-transform: uppercase;
+                font-weight: 600;
+                line-height: 1.9;
+                .tech {
+                    color: $lightgray;
+                    text-transform: none;
+                }
+            }
             .project-info-logo {
                 img {
                     width: 32px;
@@ -316,37 +348,14 @@
         .info-active {
             opacity: 1;
         }
-
     }
-
-
 }
 
 
-//     .project-info-container {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         position: absolute;
-//         bottom: 0px;
-//         width: 100%;
-//         padding: 10px;
-//         background: #fff;
-//         opacity: 0;
-//         transition: all .3s ease;
-//             .project-info-logo {
-//                 img {
-//                     width: 32px;
-//                 }
-//             }
-// }
-
-// .active {
-//     opacity: 1;
-// }
-
-
+/////////////////////////////////////////////
 //// GET IN CONTACT SECTION /////////////////
+////////////////////////////////////////////
+
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -374,7 +383,7 @@
     }
     a {
         width: 70%;
-        margin-bottom: 55px;
+        margin-bottom: 70px;
         .contact-button {
             width: 100%;
             background: $darkblack;
@@ -389,7 +398,9 @@
 }
 
 
+/////////////////////////////////////////////
 //// FOOTER SECTION /////////////////////////
+////////////////////////////////////////////
 
 footer {
     position: relative;
@@ -480,7 +491,14 @@ footer .site-map a:hover {
     color: $lightgray;
 }
 
-
+@media (min-width: 425px){
+    .hero-image {
+        .site-title {
+            text-transform: uppercase;
+            font-size: 3.25em;
+        }
+    }
+}
 @media(min-width: 760px) {
     .hero-image {
         background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)),
@@ -498,7 +516,7 @@ footer .site-map a:hover {
             margin-bottom: 0;
         }
         img {
-            margin: 70px 0 20px;
+            margin: 75px 0 20px;
             display: inline-block;
         }
         p {
@@ -549,7 +567,16 @@ footer .site-map a:hover {
             font-size: 4.125em;
         }
     }
+
+    .portfolio-container {
+        display: none;
+    }
+
+    .desktop-portfolio-container {
+        display: flex;
+    }
 }
+
 
 
 

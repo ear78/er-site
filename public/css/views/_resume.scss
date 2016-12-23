@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+.resume .button-wrap {
+    text-align: center;
+}
+
 .resume .download-resume {
     background: $darkblack;
     padding: 20px;
@@ -16,15 +20,14 @@
     font-size: .75em;
     text-transform: uppercase;
     width: 140px;
-    display: block;
-    margin: 65px auto;
+    display: inline-block;
+    margin: 80px auto;
     letter-spacing: 2px;
     text-align: center;
 }
 
 .resume .main-title {
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .resume .section-titles {
