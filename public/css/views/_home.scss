@@ -223,7 +223,7 @@
 .desktop-portfolio-container {
     display: none;
     justify-content: center;
-    max-width: 960px;
+    max-width: 1020px;
     margin: 0 auto;
     .project-box {
         margin: 0 1%;
@@ -282,8 +282,8 @@
             position: absolute;
             bottom: 0px;
             width: 100%;
-            padding: 10px 15px;
-            min-height: 80px;
+            padding: 10px;
+            min-height: 75px;
             background: #fff;
             opacity: 0;
             font-size: .75em;
@@ -298,6 +298,7 @@
                 }
             }
             .project-info-logo {
+                padding-left: 5px;
                 img {
                     width: 32px;
                 }
@@ -572,6 +573,10 @@ footer .site-map a:hover {
         }
     }
 
+    .projects-banner-image {
+        margin-bottom: 60px;
+    }
+
     .portfolio-container {
         display: none;
     }
@@ -595,5 +600,73 @@ footer .site-map a:hover {
     }
     .projects-banner-image {
         min-height: 350px;
+        h2 {
+            font-size: 4.75em;
+        }
     }
+
+}
+
+
+
+.testcontain1 {
+    width: 30%;
+    padding: 5px;
+    img {
+        width: 500px;
+        max-width: 100%;
+    }
+}
+
+.testcontain2 {
+    width: 40%;
+    padding: 5px;
+    img {
+        width: 500px;
+        max-width: 100%;
+    }
+}
+
+.testcontain3 {
+    width: 30%;
+    padding: 5px;
+    img {
+        width: 500px;
+        max-width: 100%;
+    }
+}
+.test1 {
+    padding: 5px;
+    background: pink;
+    border: 1px solid black;
+    img {
+        max-width: 100%;
+    }
+}
+
+.test2 {
+    padding: 5px;
+    background: lightblue;
+    border: 1px solid black;
+
+    img {
+        max-width: 100%;
+    }
+
+}
+
+.inner-test {
+    box-shadow: 0px 0px 10px gray;
+    background: black;
+    width: 100%;
+    line-height: 0;
+    margin-bottom: 10px;
+}
+
+.inner-test2 {
+    box-shadow: 0px 0px 10px gray;
+    background: coral;
+    width: 100%;
+    line-height: 0;
+    margin-bottom: 11.2px;
 }

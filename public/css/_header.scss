@@ -60,7 +60,7 @@
         a:nth-child(3):hover{
             text-decoration: none;
             background: $white;
-            color: $seagreen;
+            color: $darkblack;
             border: 1px solid $white;
         }
         a {
@@ -83,8 +83,15 @@
             width: 60%;
             margin: 0 auto;
         }
+        a:nth-child(3):hover:after {
+            content: '';
+            display: block;
+            background: none;
+            height: 1px;
+            width: 0;
+        }
         li {
-            margin: 8px 20px;
+            margin: 12px 20px;
             font-size: .65em;
             letter-spacing: 2px;
             text-transform: uppercase;
