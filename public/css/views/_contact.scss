@@ -8,9 +8,21 @@
   font-size: 2.125em;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   transition: all .2s ease;
   font-weight: 200;
+  font-family: $montserrat;
+}
+
+.contact-form .contact-statement {
+    font-size: .7em;
+    text-transform: uppercase;
+    color: $lightgray2;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 40px;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
 
 .contact-form p {
