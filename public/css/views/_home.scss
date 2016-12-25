@@ -121,7 +121,6 @@
     .skills-icons {
         text-align: center;
         .skills-img {
-            // max-width: 100px;
             height: 55px;
             margin: 0px 15px 15px;
             transition: all .1s ease;
@@ -133,7 +132,8 @@
     .summary-content {
         text-align: center;
         .hi {
-            color: #696969;
+            font-family: $montserrat;
+            color: $darkblack;
             font-size: 1.35em;
             margin: 20px;
         }
@@ -183,179 +183,6 @@
     }
 }
 
-.portfolio-container {
-    display: block;
-    transform: translate3d(-1500px, 0,0);
-    transition: all 1.5s ease;
-    .project-box {
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid lightgray;
-        margin-bottom: 10px;
-    }
-    .project-thumb {
-        margin-right: 8%;
-        img {
-            width: 60px;
-        }
-    }
-    .project-name {
-        font-size: .9em;
-        color: $black;
-        text-transform: uppercase;
-    }
-    .project-plus-icon {
-        position: absolute;
-        right: 30px;
-        font-size: 24px;
-        line-height: .4;
-    }
-}
-
-.portfolio-slide {
-    transform: translate3d(0,0,0);
-}
-
-//////////////////////////////////////////////
-//// DESKTOP PORTFOLIO SECTION ///////////////
-//////////////////////////////////////////////
-
-.desktop-portfolio-container {
-    display: none;
-    justify-content: center;
-    max-width: 1020px;
-    margin: 0 auto;
-    .project-box {
-        margin: 0 1%;
-        width: 20%;
-        padding: 5px;
-        border: 1px solid lightgray;
-        img {
-            max-width: 100%;
-        }
-        p {
-            width: 90%;
-            margin: 0 auto;
-            text-align: center;
-        }
-    }
-}
-
-
-//////////////////////////////////////////////
-//// PROJECTS PICTURE GRID SECTION ///////////
-/////////////////////////////////////////////
-
-.project-row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    .project-container1 {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-    }
-    .project-container2 {
-        position: relative;
-        width: 90%;
-        margin: 0 auto;
-    }
-    .box1 {
-        position: relative;
-        background: $darkblack;
-        width: 90%;
-        margin: 1%;
-        box-shadow: 0px 0px 10px gray;
-        .img-thumb {
-            max-width: 100%;
-            display: block;
-            transition: opacity .5s ease;
-        }
-        .img-thumb-fade {
-            opacity: .5;
-        }
-        //// HIDDEN UNTIL HOVER ///////////
-        .project-info-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: absolute;
-            bottom: 0px;
-            width: 100%;
-            padding: 10px;
-            min-height: 75px;
-            background: #fff;
-            opacity: 0;
-            font-size: .75em;
-            transition: opacity .5s ease;
-            .project-info-left {
-                text-transform: uppercase;
-                font-weight: 600;
-                line-height: 1.9;
-                .tech {
-                    color: $lightgray;
-                    text-transform: none;
-                }
-            }
-            .project-info-logo {
-                padding-left: 5px;
-                img {
-                    width: 32px;
-                }
-            }
-        }
-        ///// ACTIVE CLASS FOR HOVER OVER ////////////
-        .info-active {
-            opacity: 1;
-        }
-    }
-
-
-    .box2 {
-        position: relative;
-        background: $darkblack;
-        margin: 1%;
-        box-shadow: 0px 0px 10px gray;
-        img {
-            max-width: 100%;
-            display: block;
-        }
-        //// HIDDEN UNTIL HOVER ///////////
-        .project-info-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: absolute;
-            bottom: 0px;
-            width: 100%;
-            min-height: 80px;
-            font-size: .75em;
-            padding: 10px 15px;
-            background: #fff;
-            opacity: 0;
-            transition: all .5s ease;
-            .project-info-left {
-                text-transform: uppercase;
-                font-weight: 600;
-                line-height: 1.9;
-                .tech {
-                    color: $lightgray;
-                    text-transform: none;
-                }
-            }
-            .project-info-logo {
-                img {
-                    width: 32px;
-                }
-            }
-        }
-        //// ACTIVE CLASS FOR HOVER OVER //////
-        .info-active {
-            opacity: 1;
-        }
-    }
-}
-
 
 /////////////////////////////////////////////
 //// GET IN CONTACT SECTION /////////////////
@@ -372,9 +199,9 @@
         }
     }
     .contact-title {
+        font-family: 'Montserrat', sans-serif;
         margin-bottom: 15px;
         text-transform: uppercase;
-        font-weight: 600;
         font-size: 1em;
         color: #262626;
     }
@@ -403,98 +230,10 @@
 }
 
 
+
 /////////////////////////////////////////////
-//// FOOTER SECTION /////////////////////////
+//// MEDIA QUERIES /////////////////
 ////////////////////////////////////////////
-
-footer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    min-height: 430px;
-    width: 100%;
-    background: $darkblack;
-    .built {
-        color: #fff;
-        margin-bottom: 40px;
-        font-size: .75em;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-    .main-logo-container {
-        margin-bottom: 50px;
-        img {
-            width: 100px;
-        }
-    }
-    .site-map {
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        a {
-            margin: 10px 0px;
-            text-transform: uppercase;
-            font-size: .9em;
-            transition: all .2s;
-        }
-    }
-    .to-top {
-        width: 40px;
-        height: 40px;
-        border: 2px solid gray;
-        display: inline-block;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 2.3;
-        position: absolute;
-        bottom: 10px;
-        right: 15px;
-        transition: all .3s ease;
-        i {
-            font-size: 20px;
-        }
-    }
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 70px;
-        a {
-            width: 55px;
-            height: 55px;
-            border: 2px solid gray;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin: 0 15px;
-            transition: all .3s ease;
-        }
-        i {
-            font-size: 20px;
-        }
-    }
-    .site-link {
-        color: $seagreen;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: .75em;
-        letter-spacing: 2px;
-    }
-}
-
-//// HOVER LINKS FOR FOOTER ////
-footer .to-top:hover,
-footer .social-icons a:hover {
-    border: 2px solid #fff;
-}
-
-footer .site-map a:hover {
-    color: $lightgray;
-}
 
 @media (min-width: 425px){
     .hero-image {
@@ -609,64 +348,64 @@ footer .site-map a:hover {
 
 
 
-.testcontain1 {
-    width: 30%;
-    padding: 5px;
-    img {
-        width: 500px;
-        max-width: 100%;
-    }
-}
-
-.testcontain2 {
-    width: 40%;
-    padding: 5px;
-    img {
-        width: 500px;
-        max-width: 100%;
-    }
-}
-
-.testcontain3 {
-    width: 30%;
-    padding: 5px;
-    img {
-        width: 500px;
-        max-width: 100%;
-    }
-}
-.test1 {
-    padding: 5px;
-    background: pink;
-    border: 1px solid black;
-    img {
-        max-width: 100%;
-    }
-}
-
-.test2 {
-    padding: 5px;
-    background: lightblue;
-    border: 1px solid black;
-
-    img {
-        max-width: 100%;
-    }
-
-}
-
-.inner-test {
-    box-shadow: 0px 0px 10px gray;
-    background: black;
-    width: 100%;
-    line-height: 0;
-    margin-bottom: 10px;
-}
-
-.inner-test2 {
-    box-shadow: 0px 0px 10px gray;
-    background: coral;
-    width: 100%;
-    line-height: 0;
-    margin-bottom: 11.2px;
-}
+// .testcontain1 {
+//     width: 30%;
+//     padding: 5px;
+//     img {
+//         width: 500px;
+//         max-width: 100%;
+//     }
+// }
+//
+// .testcontain2 {
+//     width: 40%;
+//     padding: 5px;
+//     img {
+//         width: 500px;
+//         max-width: 100%;
+//     }
+// }
+//
+// .testcontain3 {
+//     width: 30%;
+//     padding: 5px;
+//     img {
+//         width: 500px;
+//         max-width: 100%;
+//     }
+// }
+// .test1 {
+//     padding: 5px;
+//     background: pink;
+//     border: 1px solid black;
+//     img {
+//         max-width: 100%;
+//     }
+// }
+//
+// .test2 {
+//     padding: 5px;
+//     background: lightblue;
+//     border: 1px solid black;
+//
+//     img {
+//         max-width: 100%;
+//     }
+//
+// }
+//
+// .inner-test {
+//     box-shadow: 0px 0px 10px gray;
+//     background: black;
+//     width: 100%;
+//     line-height: 0;
+//     margin-bottom: 10px;
+// }
+//
+// .inner-test2 {
+//     box-shadow: 0px 0px 10px gray;
+//     background: coral;
+//     width: 100%;
+//     line-height: 0;
+//     margin-bottom: 11.2px;
+// }
