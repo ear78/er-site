@@ -1,12 +1,6 @@
 angular.module('myApp')
-    .controller('MainCtrl', function($scope){
-
-        $scope.isShowing = true;
-        // $scope.hideContact = function(){
-        //     if($state.current === "/contact"){
-        //         $scope.isShowing = !$scope.isShowing;
-        //     }
-        // }
-        // $scope.hideContact();
+    .controller('MainCtrl', function($scope, $state){
+        // USED FOR CONTACT DIRECTIVE NG-SHOW/HIDE IF ON CONTACT
+        $scope.$state = $state;
 
     });

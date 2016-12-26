@@ -19,7 +19,9 @@
             <!-- MOBILE HEADER MENU  WITH ONSCROLL DIRECTIVE-->
             <header class="mobile-main-header-container" menu-scroll>
                 <div class="main-logo-container">
-                    <img ng-src="./img/earlogo1white.svg"/>
+                    <a ui-sref="home">
+                        <img ng-src="./img/earlogo1white.svg"/>
+                    </a>
                 </div>
                 <img class="hamburger" ng-src="./img/ic_menu_white_24px.svg" ng-click="openMobileMenu()"/>
             </header>
@@ -33,9 +35,10 @@
                     <!-- <img ng-src="./img/earlogo1white.svg"/> -->
                 </div>
                 <nav class="main-nav-container">
-                    <a href="about"><li>About</li></a>
-                    <a href="#"><li>Portfolio</li></a>
-                    <a href="contact"><li>Contact</li></a>
+                    <a ui-sref="home"><li>Home</li></a>
+                    <a ui-sref="about"><li>About</li></a>
+                    <a ui-sref="#"><li>Portfolio</li></a>
+                    <a ui-sref="contact"><li>Contact</li></a>
                 </nav>
             </header>
 
@@ -43,12 +46,14 @@
             <ui-view autoscroll="true"></ui-view>
 
             <!-- CONTACT SECTION DIRECTIVE -->
-            <contact-section-directive ng-show="isShowing"></contact-section-directive>
+            <contact-section-directive ng-hide="$state.current.name === 'contact'"></contact-section-directive>
 
             <footer>
                 <p class="built">Built By Hand in Nashville, Tn</p>
                 <div class="main-logo-container">
-                    <img ng-src="./img/earlogo1white.svg"/>
+                    <a ui-sref="home">
+                        <img ng-src="./img/earlogo1white.svg"/>
+                    </a>
                 </div>
                 <ul class="site-map">
                     <a href="#">About</a>
@@ -77,6 +82,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
         <script src="./js/app.js"></script>
         <script src="./js/controllers/MainCtrl.js"></script>
+        <script src="./js/service/mainService.js"></script>
         <script src="./js/directives/mobileMenuDirective.js"></script>
         <script src="./js/directives/menuScrollDirective.js"></script>
         <script src="./js/directives/portfolioDirective.js"></script>
