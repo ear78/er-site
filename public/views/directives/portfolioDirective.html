@@ -1,6 +1,20 @@
 <!-- PORTFOLIO SCROLL DIRECTIVE ATTRIBUTE -->
 <div portfolio-scroll-directive portfolio-drop-directive class="portfolio-container">
-    <div class="project-box">
+    <div ng-repeat="data in portfolio" class="project-box">
+        <div class="project-thumb">
+            <img ng-src='{{ data.img }}' />
+        </div>
+        <p class="project-name">{{ data.name }}</p>
+        <span class="project-plus-icon">+</span>
+    </div>
+    <!-- <div class="project-drop">
+        <img ng-src='./img/optimalins802x694.jpg' />
+        <img ng-src='./img/optimalins802x694.jpg' />
+        <img ng-src='./img/optimalins802x694.jpg' />
+        <img ng-src='./img/optimalins802x694.jpg' />
+    </div> -->
+
+    <!-- <div class="project-box">
         <div class="project-thumb">
             <img ng-src='./img/ersite802x694.jpg' />
         </div>
@@ -54,7 +68,7 @@
         <img ng-src='./img/optimalins802x694.jpg' />
         <img ng-src='./img/optimalins802x694.jpg' />
         <img ng-src='./img/optimalins802x694.jpg' />
-    </div>
+    </div> -->
 </div>
 
 
