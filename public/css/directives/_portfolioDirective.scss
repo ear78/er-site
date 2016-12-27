@@ -21,7 +21,7 @@
         img {
             width: 55px;
             border-radius: 5%;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
             border: 1px solid lightgray;
         }
     }
@@ -76,12 +76,18 @@
 .project-row {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     .project-container1 {
-        width: 90%;
-        margin: 0 auto;
+        width: 33.3%;
         display: flex;
+        justify-content: center;
+        // transition: transform .2s ease;
     }
+    // .project-container1:hover {
+    //     transform: scale(1.02);
+    // }
     .project-container2 {
         position: relative;
         width: 90%;
@@ -90,13 +96,15 @@
     .box1 {
         position: relative;
         background: $darkblack;
-        width: 90%;
-        margin: 1%;
-        box-shadow: 0px 0px 10px gray;
+        width: 100%;
+        margin: 5%;
+        box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+        transition: all .2s ease;
         .img-thumb {
             max-width: 100%;
             display: block;
-            transition: opacity .5s ease;
+            opacity: .2;
+            // transition: opacity .5s ease;
         }
         .img-thumb-fade {
             opacity: .5;
@@ -106,20 +114,29 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-direction: column;
             position: absolute;
-            bottom: 0px;
+            bottom: 20px;
             width: 100%;
             padding: 10px;
             min-height: 75px;
-            background: #fff;
-            opacity: 0;
-            font-size: .75em;
+            opacity: 1;
             transition: opacity .5s ease;
             .project-info-left {
+                text-align: center;
                 text-transform: uppercase;
                 font-weight: 600;
                 line-height: 1.9;
+                margin-bottom: 15px;
+                p {
+                    color: $white;
+                    font-family: $montserrat;
+                    font-size: 1em;
+                }
                 .tech {
+                    font-size: .75em;
+                    font-family: $nunito;
+                    font-weight: 200;
                     color: $lightgray;
                     text-transform: none;
                 }
@@ -136,13 +153,18 @@
             opacity: 1;
         }
     }
+    .box1:hover {
+        cursor: pointer;
+        opacity: .9;
+        transform: scale(1.02);
+    }
 
 
     .box2 {
         position: relative;
         background: $darkblack;
         margin: 1%;
-        box-shadow: 0px 0px 10px gray;
+        box-shadow: 0px 0px 5px rgba(0,0,0,.2);
         img {
             max-width: 100%;
             display: block;
