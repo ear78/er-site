@@ -1,81 +1,54 @@
 <!-- PORTFOLIO SCROLL DIRECTIVE ATTRIBUTE -->
-<div portfolio-scroll-directive portfolio-drop-directive class="portfolio-container">
-    <div ng-repeat="data in portfolio" class="project-box">
-        <div class="project-thumb">
-            <img ng-src='{{ data.img }}' />
+<div portfolio-scroll-directive  class="portfolio-container">
+    <div ng-repeat="data in portfolio">
+        <div class="project-box" portfolio-drop-directive>
+            <div class="project-thumb">
+                <img ng-src='{{ data.img }}' />
+            </div>
+            <p class="project-name">{{ data.name }}</p>
+            <span class="project-plus-icon">+</span>
         </div>
-        <p class="project-name">{{ data.name }}</p>
-        <span class="project-plus-icon">+</span>
-    </div>
-    <!-- <div class="project-drop">
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-    </div> -->
-
-    <!-- <div class="project-box">
-        <div class="project-thumb">
-            <img ng-src='./img/ersite802x694.jpg' />
-        </div>
-        <p class="project-name">Elliot Richardson Site Rebuild</p>
-        <span class="project-plus-icon">+</span>
-    </div>
-    <div class="project-drop">
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-    </div>
-
-    <div class="project-box">
-        <div class="project-thumb">
-            <img ng-src='./img/rodesk802x694.jpg' />
-        </div>
-        <p class="project-name">Rodesk Site Clone</p>
-        <span class="project-plus-icon">+</span>
-    </div>
-    <div class="project-drop">
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-    </div>
-
-    <div class="project-box">
-        <div class="project-thumb">
-            <img ng-src='./img/beoplay802x694.jpg' />
-        </div>
-        <p class="project-name">Beoplay Site Clone</p>
-        <span class="project-plus-icon">+</span>
-    </div>
-    <div class="project-drop">
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-    </div>
-
-    <div class="project-box">
-        <div class="project-thumb">
+        <div class="project-drop">
+            <img ng-src='./img/optimalins802x694.jpg' />
+            <img ng-src='./img/optimalins802x694.jpg' />
+            <img ng-src='./img/optimalins802x694.jpg' />
             <img ng-src='./img/optimalins802x694.jpg' />
         </div>
-        <p class="project-name">Optimal Insurance Choice Site</p>
-        <span class="project-plus-icon">+</span>
     </div>
-    <div class="project-drop">
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-        <img ng-src='./img/optimalins802x694.jpg' />
-    </div> -->
+
 </div>
 
 
 <!-- DESKTOP PORTFOLIO SECTION HIDDEN BEFORE 760PX -->
-<div class="desktop-portfolio-container">
+<div class="desktop-portfolio-container" ng-cloak>
     <div class="project-row">
-        <div class=project-container1>
+        <div ng-repeat="data in portfolio" class="project-container1">
+             <div class="box1">
+                 <img class="img-thumb" ng-src="{{ data.img }}"/>
+                 <div class="project-info-container">
+                     <div class="project-info-left">
+                        <p>{{ data.name }}</p>
+                        <p class="tech">{{ data.tech}}</p>
+                    </div>
+                    <div class="project-info-logo">
+                        <img ng-src="../../img/earlogo2white.svg"/>
+                    </div>
+                 </div>
+             </div>
+             <!-- <div class="box1">
+                 <img class="img-thumb" ng-src="{{ data.img }}"/>
+                 <div class="project-info-container">
+                     <div class="project-info-left">
+                        <p>{{ data.name }}</p>
+                        <p class="tech">{{ data.tech}}</p>
+                    </div>
+                    <div class="project-info-logo">
+                        <img ng-src="../../img/earlogo2.svg"/>
+                    </div>
+                 </div>
+             </div> -->
+        </div>
+        <!-- <div class=project-container1>
              <div class="box1">
                  <img class="img-thumb" ng-src="../../img/ersite802x694.jpg"/>
                  <div class="project-info-container">
@@ -99,8 +72,8 @@
                         <img ng-src="../../img/earlogo2.svg"/>
                     </div>
                  </div>
-             </div>
-             <div class="box1">
+             </div> -->
+             <!-- <div class="box1">
                  <img class="img-thumb" ng-src="../../img/explore802x694.jpg"/>
                  <div class="project-info-container">
                      <div class="project-info-left">
@@ -111,9 +84,9 @@
                         <img ng-src="../../img/earlogo2.svg"/>
                     </div>
                  </div>
-             </div>
-        </div>
-        <div class=project-container1>
+             </div> -->
+        <!-- </div> -->
+        <!-- <div class=project-container1>
              <div class="box1">
                  <img class="img-thumb" ng-src="../../img/optimalins802x694.jpg"/>
                  <div class="project-info-container">
@@ -138,8 +111,8 @@
                     </div>
                  </div>
              </div>
-        </div>
-        <div class=project-container1>
+        </div> -->
+        <!-- <div class=project-container1>
              <div class="box1">
                  <img class="img-thumb" ng-src="../../img/optimalins802x694.jpg"/>
                  <div class="project-info-container">
@@ -163,8 +136,8 @@
                         <img ng-src="../../img/earlogo2.svg"/>
                     </div>
                  </div>
-             </div>
-             <div class="box1">
+             </div> -->
+             <!-- <div class="box1">
                  <img class="img-thumb" ng-src="../../img/future802x694.jpg"/>
                  <div class="project-info-container">
                      <div class="project-info-left">
@@ -175,6 +148,6 @@
                         <img ng-src="../../img/earlogo2.svg"/>
                     </div>
                  </div>
-             </div>
+             </div> -->
         </div>
 </div>

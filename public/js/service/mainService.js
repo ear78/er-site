@@ -4,27 +4,35 @@ angular.module('myApp')
         this.portfolio = [
             {
             img: './img/ersite802x694.jpg',
-            name: 'Elliot Richardson Site Build'
+            name: 'Elliot Richardson Site',
+            tech: 'HTML, CSS, Javascript, Angular, Jquery, Gulp, Sass, Node.js'
             },
             {
             img: './img/rodesk802x694.jpg',
-            name: 'Rodesk Site Clone'
+            name: 'Rodesk Site Clone',
+            tech: 'HTML, CSS, Javascript, Angular, Jquery, Gulp, Sass, Node.js'
             },
             {
             img: './img/Beoplay802x694.jpg',
-            name: 'Beoplay Site Clone'
+            name: 'Beoplay Site Clone',
+            tech: 'HTML, CSS, Javascript, Angular, Jquery, Gulp, Sass, Node.js'
             },
             {
             img: './img/optimalins802x694.jpg',
-            name: 'Optimal Insurance Site'
+            name: 'Optimal Insurance Site',
+            tech: 'HTML, CSS, Javascript, Angular, Jquery, Gulp, Sass, Node.js'
             },
             {
             img: './img/emp802x694.jpg',
-            name: 'Empowered Employment Site'
+            name: 'Empowered Emp Site',
+            tech: 'HTML, CSS, Javascript, Angular, Jquery, Gulp, Sass, Node.js'
             },
             {
-                img: './img/lyftpic1.jpg',
-                name: 'Lyft Site Clone'
+                img: './img/slice8.jpg',
+                name: 'Lyft Site Clone',
+                tech: 'HTML, CSS, Javascript, Angular, Jquery, Gulp, Sass, Node.js'
             }
-        ]
+        ];
+
+
     })

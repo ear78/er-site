@@ -6,8 +6,8 @@ angular.module('myApp')
                 var $projectBox = $('.project-box');
                 var $projectDrop = $('.project-drop');
 
-                $projectBox.on('click', function(){
-                    $(this).next('.project-drop').slideToggle(400);
+                element.on('click', function(){
+                    element.next().slideToggle(400);
                 })
             }
         }
