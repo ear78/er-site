@@ -105,6 +105,11 @@ h4 {
 .margin-bottom-mid {
   margin-bottom: 60px; }
 
+.page-logo {
+  width: 60px;
+  display: block;
+  margin: 0px auto 15px; }
+
 .hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/clouds1.jpg");
   background-size: cover;
@@ -217,11 +222,7 @@ h4 {
   margin-bottom: 30px;
   transition: all .2s ease; }
   .projects-banner-image h2 {
-    margin-top: 60px;
     font-weight: 200; }
-  .projects-banner-image .downarrow {
-    width: 32px;
-    margin-top: 50px; }
 
 .contact-container {
   display: flex;
@@ -761,11 +762,6 @@ footer .site-map a:hover {
 @media (min-width: 1440px) {
   .social-border {
     padding: 5% 4% 7%; } }
-
-.about .logo {
-  width: 60px;
-  display: block;
-  margin: 0px auto 15px; }
 
 .about .main-title {
   text-align: center; }
