@@ -1,13 +1,13 @@
-<div ng-class="{'open-mobile-menu': toggleMobileMenu}" class="mobile-menu-modal" ng-click="closeMobileMenu()"></div>
-<div ng-class="{'open-mobile-menu': toggleMobileMenu}" class="mobile-menu-container">
+<div class="mobile-menu-modal"></div>
+<div class="mobile-menu-container">
     <img class="close-menu" ng-src="img/closebuttonblk.svg" ng-click="openMobileMenu()"/>
-    <nav ng-class="{'slide-up': toggle2}">
-        <a href="#"><li>About</li></a>
+    <nav>
+        <a ui-sref="about"><li>About</li></a>
         <a href="#"><li>Portfolio</li></a>
         <a ui-sref="resume"><li>Resume</li></a>
-        <a href="#"><li>Contact</li></a>
+        <a ui-sref="contact"><li>Contact</li></a>
     </nav>
-    <div class="main-logo-container" ng-class="{'slide-up': toggle2}">
+    <div class="main-logo-container">
         <img ng-src="./img/earlogo1.svg"/>
     </div>
 </div>
