@@ -121,6 +121,7 @@
             padding: 10px;
             min-height: 75px;
             opacity: 1;
+            min-height: 147px;
             transition: opacity .5s ease;
             .project-info-left {
                 text-align: center;
@@ -131,7 +132,7 @@
                 p {
                     color: $white;
                     font-family: $montserrat;
-                    font-size: 1em;
+                    font-size: .9em;
                 }
                 .tech {
                     font-size: .75em;
@@ -238,5 +239,19 @@
 
     .desktop-portfolio-container {
         display: flex;
+    }
+}
+
+@media(min-width: 1000px){
+    .project-row {
+        .box1 {
+            .project-info-container {
+                .project-info-left {
+                    p {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
     }
 }
