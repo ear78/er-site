@@ -1,0 +1,58 @@
+
+
+.about .logo {
+    width: 60px;
+    display: block;
+    margin: 0px auto 15px;
+}
+
+.about .main-title {
+    text-align: center;
+}
+
+.about .subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: $lightgray2;
+    text-transform: uppercase;
+    font-size: .75em;
+}
+
+.about .content-container {
+    margin-top: 50px;
+}
+
+.about .main-pic {
+    max-width: 100%;
+    margin: 0 10px 10px 0;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.about .story {
+    margin: 10px 0;
+    font-family: montserrat;
+}
+
+.content {
+    line-height: 1.3;
+    .born {
+        font-family: 'montserrat', sans-serif;
+    }
+}
+
+
+
+
+@media (min-width: 760px){
+    .about .main-pic {
+        width: 450px;
+        max-width: 35%;
+        margin: 20px 10px 10px 0;
+        float: left;
+    }
+
+    .about .subtitle {
+        margin-bottom: 80px;
+    }
+}
