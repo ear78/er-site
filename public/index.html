@@ -37,7 +37,9 @@
                 <nav class="main-nav-container">
                     <a ui-sref="home"><li>Home</li></a>
                     <a ui-sref="about"><li>About</li></a>
-                    <a href="#"><li>Portfolio</li></a>
+
+                    <!-- DIRECTIVE FOR SCROLL TO EVENT PROJECT SECTION -->
+                    <a href="" click-scroll-directive><li>Portfolio</li></a>
                     <a ui-sref="contact"><li>Contact</li></a>
                 </nav>
             </header>
@@ -48,6 +50,7 @@
             <!-- CONTACT SECTION DIRECTIVE -->
             <contact-section-directive ng-hide="$state.current.name === 'contact'"></contact-section-directive>
 
+            <!-- FOOTER SECTION -->
             <footer>
                 <p class="built">Built By Hand in Nashville, Tn</p>
                 <div class="main-logo-container">
@@ -93,5 +96,6 @@
         <script src="./js/directives/contactSectionDirective.js"></script>
         <script src="./js/directives/portfolioDropDirective.js"></script>
         <script src="./js/directives/socialIconDirective.js"></script>
+        <script src="./js/directives/clickScrollDirective.js"></script>
     </body>
 </html>

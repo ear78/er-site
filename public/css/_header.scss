@@ -52,6 +52,7 @@
     min-height: 60px;
     align-items: center;
     padding: 0 20px 0 0;
+    transition: all .4s ease;
     .main-nav-container {
         display: flex;
 
@@ -107,7 +108,7 @@
     .hamburger {
         width: 28px;
     }
-}
+}// CLOSING TAG FOR MAIN HEADER CSS
 
 @media (min-width: 760px){
     .mobile-main-header-container {
