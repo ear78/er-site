@@ -2,8 +2,9 @@
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
     url('../../img/clouds1.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center -150px;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 410px;
     width: 100%;
     display: flex;
@@ -155,7 +156,7 @@
     .email-icon {
         margin-bottom: 15px;
         img {
-            width: 47px;
+            width: 45px;
         }
     }
     .contact-title {
@@ -208,8 +209,9 @@
         background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)),
         url('../../img/clouds1.jpg');
         background-size: cover;
-        background-position: center;
+        background-position: center -250px;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         justify-content: flex-end;
         align-items: center;
         min-height: 510px;
@@ -286,6 +288,7 @@
 
 @media(min-width: 1000px) {
     .hero-image {
+        background-position: center -350px;
         .site-title {
             font-size: 4.75em;
         }
