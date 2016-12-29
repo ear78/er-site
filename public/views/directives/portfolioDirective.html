@@ -8,12 +8,18 @@
             <p class="project-name">{{ data.name }}</p>
             <span class="project-plus-icon">+</span>
         </div>
-        <div class="project-drop">
-            <img ng-src='./img/optimalins802x694.jpg' />
-            <img ng-src='./img/optimalins802x694.jpg' />
-            <img ng-src='./img/optimalins802x694.jpg' />
-            <img ng-src='./img/optimalins802x694.jpg' />
+        <div ng-repeat="data in portfolio" class="project-drop">
+            <img ng-src='{{ data.images[0] }}' />
+            <img ng-src='{{ data.images[1] }}' />
+            <img ng-src='{{ data.images[2] }}' />
+            <img ng-src='{{ data.images[3] }}' />
         </div>
+        <!-- <div class="project-drop">
+            <img ng-src='./img/optimalins802x694.jpg' />
+            <img ng-src='./img/optimalins802x694.jpg' />
+            <img ng-src='./img/optimalins802x694.jpg' />
+            <img ng-src='./img/optimalins802x694.jpg' />
+        </div> -->
     </div>
 
 </div>
@@ -35,119 +41,7 @@
                     </div>
                  </div>
              </div>
-             <!-- <div class="box1">
-                 <img class="img-thumb" ng-src="{{ data.img }}"/>
-                 <div class="project-info-container">
-                     <div class="project-info-left">
-                        <p>{{ data.name }}</p>
-                        <p class="tech">{{ data.tech}}</p>
-                    </div>
-                    <div class="project-info-logo">
-                        <img ng-src="../../img/earlogo2.svg"/>
-                    </div>
-                 </div>
-             </div> -->
         </div>
-        <!-- <div class=project-container1>
-             <div class="box1">
-                 <img class="img-thumb" ng-src="../../img/ersite802x694.jpg"/>
-                 <div class="project-info-container">
-                     <div class="project-info-left">
-                        <p>Elliot Richardson Site Rebuild</p>
-                        <p class="tech">HTML, CSS, Javascript, Angular, Jquery, Gulp, Sass, Node.js</p>
-                    </div>
-                    <div class="project-info-logo">
-                        <img ng-src="../../img/earlogo2.svg"/>
-                    </div>
-                 </div>
-             </div>
-             <div class="box1">
-                 <img class="img-thumb" ng-src="../../img/rodesk802x694.jpg"/>
-                 <div class="project-info-container">
-                     <div class="project-info-left">
-                        <p>Rodesk Site Clone</p>
-                        <p class="tech">HTML, CSS, Javascript, Jquery, Angular</p>
-                    </div>
-                    <div class="project-info-logo">
-                        <img ng-src="../../img/earlogo2.svg"/>
-                    </div>
-                 </div>
-             </div> -->
-             <!-- <div class="box1">
-                 <img class="img-thumb" ng-src="../../img/explore802x694.jpg"/>
-                 <div class="project-info-container">
-                     <div class="project-info-left">
-                        <p>Custom Site Mockup</p>
-                        <p class="tech">Affinity Suite</p>
-                    </div>
-                    <div class="project-info-logo">
-                        <img ng-src="../../img/earlogo2.svg"/>
-                    </div>
-                 </div>
-             </div> -->
-        <!-- </div> -->
-        <!-- <div class=project-container1>
-             <div class="box1">
-                 <img class="img-thumb" ng-src="../../img/optimalins802x694.jpg"/>
-                 <div class="project-info-container">
-                     <div class="project-info-left">
-                        <p>Optimal Insurance Site</p>
-                        <p class="tech">HTML, CSS, Squarespace</p>
-                    </div>
-                    <div class="project-info-logo">
-                        <img ng-src="../../img/earlogo2.svg"/>
-                    </div>
-                 </div>
-             </div>
-             <div class="box1">
-                 <img class="img-thumb" ng-src="../../img/beoplay802x694.jpg"/>
-                 <div class="project-info-container">
-                     <div class="project-info-left">
-                        <p>Beoplay Site Clone</p>
-                        <p class="tech">HTML, CSS, Javascript, Jquery, Angular, Node.js, Gulp, Sass</p>
-                    </div>
-                    <div class="project-info-logo">
-                        <img ng-src="../../img/earlogo2.svg"/>
-                    </div>
-                 </div>
-             </div>
-        </div> -->
-        <!-- <div class=project-container1>
-             <div class="box1">
-                 <img class="img-thumb" ng-src="../../img/optimalins802x694.jpg"/>
-                 <div class="project-info-container">
-                     <div class="project-info-left">
-                        <p>Optimal Insurance Site</p>
-                        <p class="tech">HTML, CSS, Squarespace</p>
-                    </div>
-                    <div class="project-info-logo">
-                        <img ng-src="../../img/earlogo2.svg"/>
-                    </div>
-                 </div>
-             </div>
-             <div class="box1">
-                 <img class="img-thumb" ng-src="../../img/emp802x694.jpg"/>
-                 <div class="project-info-container">
-                     <div class="project-info-left">
-                        <p>Empowered Emp Redesign</p>
-                        <p class="tech">HTML, CSS, responsive design, updated user interface</p>
-                    </div>
-                    <div class="project-info-logo">
-                        <img ng-src="../../img/earlogo2.svg"/>
-                    </div>
-                 </div>
-             </div> -->
-             <!-- <div class="box1">
-                 <img class="img-thumb" ng-src="../../img/future802x694.jpg"/>
-                 <div class="project-info-container">
-                     <div class="project-info-left">
-                        <p>Custom Wordpress Template</p>
-                        <p class="tech">HTML, CSS, Javascript, Jquery, Wordpress, PHP</p>
-                    </div>
-                    <div class="project-info-logo">
-                        <img ng-src="../../img/earlogo2.svg"/>
-                    </div>
-                 </div>
-             </div> -->
+
         </div>
 </div>

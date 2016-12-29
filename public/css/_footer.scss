@@ -53,6 +53,7 @@ footer {
             font-size: 20px;
         }
     }
+
     .social-icons {
         display: flex;
         justify-content: center;
@@ -85,6 +86,7 @@ footer {
 footer .to-top:hover,
 footer .social-icons a:hover {
     border: 2px solid #fff;
+    cursor: pointer;
 }
 
 footer .site-map a:hover {

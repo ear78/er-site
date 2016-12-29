@@ -113,8 +113,9 @@ h4 {
 .hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/clouds1.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center -150px;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 410px;
   width: 100%;
   display: flex;
@@ -232,7 +233,7 @@ h4 {
   .contact-container .email-icon {
     margin-bottom: 15px; }
     .contact-container .email-icon img {
-      width: 47px; }
+      width: 45px; }
   .contact-container .contact-title {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 15px;
@@ -268,8 +269,9 @@ h4 {
   .hero-image {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../../img/clouds1.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center -250px;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     justify-content: flex-end;
     align-items: center;
     min-height: 510px; }
@@ -309,10 +311,12 @@ h4 {
     margin-bottom: 60px; } }
 
 @media (min-width: 1000px) {
-  .hero-image .site-title {
-    font-size: 4.75em; }
-  .hero-image img {
-    width: 80px; }
+  .hero-image {
+    background-position: center -350px; }
+    .hero-image .site-title {
+      font-size: 4.75em; }
+    .hero-image img {
+      width: 80px; }
   .projects-banner-image {
     min-height: 350px; }
     .projects-banner-image h2 {
@@ -482,7 +486,8 @@ footer {
 
 footer .to-top:hover,
 footer .social-icons a:hover {
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  cursor: pointer; }
 
 footer .site-map a:hover {
   color: #d3d3d3; }
