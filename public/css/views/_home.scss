@@ -12,6 +12,7 @@
     margin-bottom: 30px;
     padding-bottom: 24px;
     position: relative;
+    opacity: 1;
     .site-title {
         text-transform: uppercase;
         font-size: 2.75em;
@@ -62,6 +63,9 @@
     }
     transition: all .2s ease;
 }
+
+//// FADE TITLE CLASS FOR ANIMATIONS///////////
+
 
 .summary-skills {
     .elliot-pic-container {
