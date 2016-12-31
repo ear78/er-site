@@ -14,12 +14,6 @@
             <img ng-src='{{ data.images[2] }}' />
             <img ng-src='{{ data.images[3] }}' />
         </div>
-        <!-- <div class="project-drop">
-            <img ng-src='./img/optimalins802x694.jpg' />
-            <img ng-src='./img/optimalins802x694.jpg' />
-            <img ng-src='./img/optimalins802x694.jpg' />
-            <img ng-src='./img/optimalins802x694.jpg' />
-        </div> -->
     </div>
 
 </div>
@@ -29,7 +23,7 @@
 <div class="desktop-portfolio-container" ng-cloak>
     <div class="project-row">
         <div ng-repeat="data in portfolio" class="project-container1">
-             <div class="box1">
+             <div class="box1" portfolio-modal-directive>
                  <img class="img-thumb" ng-src="{{ data.img }}"/>
                  <div class="project-info-container">
                      <div class="project-info-left">
@@ -41,7 +35,15 @@
                     </div>
                  </div>
              </div>
+             <div class="portfolio-modal" portfolio-modal-directive>
+                <img portfolio-modal-directive class="close-menu" ng-src="img/closebuttonwhite.svg"/>
+                <div class="portfolio-box">
+                    <img ng-src='{{ data.images[0] }}' />
+                    <img ng-src='{{ data.images[1] }}' />
+                    <img ng-src='{{ data.images[2] }}' />
+                    <img ng-src='{{ data.images[3] }}' />
+                </div>
+             </div>
         </div>
-
-        </div>
+    </div>
 </div>
