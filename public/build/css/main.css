@@ -110,6 +110,17 @@ h4 {
   display: block;
   margin: 0px auto 15px; }
 
+ui-view.ng-enter,
+[ui-view].ng-enter {
+  opacity: 0;
+  transform: translate3d(0px, 25px, 0);
+  transition: opacity 1.5s, transform .9s; }
+
+ui-view.ng-enter-active,
+[ui-view].ng-enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0); }
+
 .hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/clouds1.jpg");
   background-size: cover;
@@ -269,7 +280,7 @@ h4 {
   .hero-image {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../../img/clouds1.jpg");
     background-size: cover;
-    background-position: center -250px;
+    background-position: center -215px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     justify-content: flex-end;
@@ -311,12 +322,10 @@ h4 {
     margin-bottom: 60px; } }
 
 @media (min-width: 1000px) {
-  .hero-image {
-    background-position: center -350px; }
-    .hero-image .site-title {
-      font-size: 4.75em; }
-    .hero-image img {
-      width: 80px; }
+  .hero-image .site-title {
+    font-size: 4.75em; }
+  .hero-image img {
+    width: 80px; }
   .projects-banner-image {
     min-height: 350px; }
     .projects-banner-image h2 {
@@ -367,7 +376,7 @@ h4 {
   min-height: 60px;
   align-items: center;
   padding: 0 20px 0 0;
-  transition: all .4s ease; }
+  transition: all .5s ease; }
   .main-header-container .main-nav-container {
     display: flex; }
     .main-header-container .main-nav-container a:nth-child(4) {
@@ -1026,6 +1035,34 @@ footer .site-map a:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     max-width: 85%; }
 
+.portfolio-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #262626;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  z-index: 10; }
+
+.portfolio-box {
+  text-align: center;
+  padding-top: 15px;
+  background: white;
+  width: 820px;
+  max-width: 90%;
+  margin: 85px auto;
+  padding-bottom: 15px;
+  transition: margin .2s;
+  border-radius: 3px; }
+  .portfolio-box img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 42%;
+    border-radius: 3px; }
+
 @media (min-width: 425px) {
   .project-drop img {
     max-width: 45%; }
@@ -1040,7 +1077,9 @@ footer .site-map a:hover {
 
 @media (min-width: 1000px) {
   .project-row .box1 .project-info-container .project-info-left p {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .portfolio-box {
+    margin: 60px auto; } }
 
 .social-container-dark {
   display: flex;

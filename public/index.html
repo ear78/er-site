@@ -13,7 +13,7 @@
     </head>
 
     <body ng-controller="MainCtrl" ng-cloak>
-        <main class="main-wrapper">
+        <main class="main-wrapper fade">
 
 
             <!-- MOBILE HEADER MENU  WITH ONSCROLL DIRECTIVE-->
@@ -45,7 +45,7 @@
             </header>
 
             <!-- UI VIEW FOR ANGULAR -->
-            <ui-view autoscroll="true"></ui-view>
+            <div ui-view autoscroll="true" ></div>
 
             <!-- CONTACT SECTION DIRECTIVE -->
             <contact-section-directive ng-hide="$state.current.name === 'contact'"></contact-section-directive>
@@ -78,12 +78,13 @@
         </main>
 
 
-        <!-- CDN SCRIPTS JQUERY, ANGULAR, UI-ROUTER -->
+        <!-- CDN SCRIPTS JQUERY, ANGULAR, UI-ROUTER, ANGULAR ANIMATE -->
         <script src="https://code.jquery.com/jquery-2.2.4.js"
           integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
           crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
 
         <!-- JAVASCRIPT FILES -->
         <script src="./js/app.js"></script>
@@ -98,5 +99,6 @@
         <script src="./js/directives/socialIconDirective.js"></script>
         <script src="./js/directives/clickScrollDirective.js"></script>
         <script src="./js/directives/titleFadeDirective.js"></script>
+        <script src="./js/directives/portfolioModalDirective.js"></script>
     </body>
 </html>
