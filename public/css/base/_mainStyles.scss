@@ -11,7 +11,7 @@ font-family: 'Nunito Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans:200');
 
 //// SASS COLOR VARIABLES /////
-$darkgray: #696969;
+$darkgray: #383838;
 $seagreen: lightseagreen;
 $black: #262626;
 $darkblack: #101010;
@@ -113,14 +113,3 @@ ui-view.ng-enter-active,
     opacity: 1;
     transform: translate3d(0,0,0);
 }
-
-// .fade {
-//     opacity: 0;
-//     transform: translate3d(0px,25px,0);
-//     transition: opacity 1.5s, transform .9s;
-// }
-//
-// .fade-active {
-//     opacity: 1;
-//     transform: translate3d(0px,0,0);
-// }

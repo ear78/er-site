@@ -81,7 +81,7 @@ h3 {
   font-size: 2.125em; }
 
 h4 {
-  color: #696969;
+  color: #383838;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1em; }
 
@@ -127,7 +127,7 @@ ui-view.ng-enter-active,
   background-position: center -150px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 410px;
+  min-height: 450px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -223,10 +223,11 @@ ui-view.ng-enter-active,
 
 .projects-banner-image {
   background: url("../../img/beachpic1.jpg");
-  background-position: 50% 75%;
+  background-position: 50% -75px;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 300px;
+  background-attachment: fixed;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,8 +235,22 @@ ui-view.ng-enter-active,
   color: #fff;
   margin-bottom: 30px;
   transition: all .2s ease; }
+  .projects-banner-image .logos {
+    width: 95px; }
   .projects-banner-image h2 {
-    font-weight: 200; }
+    font-family: "montserrat", sans-serif;
+    margin-bottom: 0px;
+    text-transform: uppercase; }
+  .projects-banner-image .sub-title {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: "montserrat", sans-serif;
+    margin-bottom: 5px; }
+  .projects-banner-image .text {
+    text-transform: uppercase;
+    font-size: .7em;
+    width: 60%;
+    text-align: center; }
 
 .contact-container {
   display: flex;
@@ -319,17 +334,19 @@ ui-view.ng-enter-active,
   .projects-banner-image h2 {
     font-size: 4.125em; }
   .projects-banner-image {
-    margin-bottom: 60px; } }
+    margin-bottom: 20px; }
+    .projects-banner-image .sub-title {
+      font-size: 1em; }
+    .projects-banner-image .text {
+      width: 50%; } }
 
 @media (min-width: 1000px) {
   .hero-image .site-title {
     font-size: 4.75em; }
   .hero-image img {
     width: 80px; }
-  .projects-banner-image {
-    min-height: 350px; }
-    .projects-banner-image h2 {
-      font-size: 4.75em; }
+  .projects-banner-image h2 {
+    font-size: 4.75em; }
   .summary-skills .skills-list {
     max-width: 1100px;
     margin-left: auto;
@@ -411,7 +428,7 @@ ui-view.ng-enter-active,
       height: 1px;
       width: 0; }
     .main-header-container .main-nav-container li {
-      margin: 12px 20px 11px;
+      margin: 12px 20px 9px;
       font-size: .65em;
       letter-spacing: 2px;
       text-transform: uppercase; }
@@ -459,7 +476,7 @@ footer {
   footer .to-top {
     width: 40px;
     height: 40px;
-    border: 2px solid gray;
+    border: 2px solid #383838;
     display: inline-block;
     border-radius: 50%;
     text-align: center;
@@ -477,7 +494,7 @@ footer {
     footer .social-icons a {
       width: 55px;
       height: 55px;
-      border: 2px solid gray;
+      border: 2px solid #383838;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -852,7 +869,7 @@ footer .site-map a:hover {
     margin-bottom: 25px;
     transform: translate3d(0, 25px, 0); }
   .mobile-menu-container a {
-    color: #696969; }
+    color: #383838; }
   .mobile-menu-container a:hover {
     color: #262626; }
   .mobile-menu-container li {
@@ -1115,3 +1132,30 @@ footer .site-map a:hover {
     margin: 2px 5px; }
   .social-container-dark .social-icons-dark a:hover {
     color: lightseagreen; }
+
+.logo-component {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto; }
+  .logo-component .logos {
+    width: 60px; }
+
+.logo-component .logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px; }
+  .logo-component .logos-container div {
+    width: 33%; }
+
+.logo-component .text-container {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .logo-component .text-container p {
+    width: 33%;
+    padding: 0 4%;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600; }
