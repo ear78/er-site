@@ -13,29 +13,29 @@ angular.module('myApp')
                 img: './img/rodesk802x694.jpg',
                 name: 'Rodesk Site Clone',
                 tech: 'HTML, CSS, Javascript, Angular, Jquery, Sketch',
-                images: ['./img/ersite802x694.jpg', './img/rodesk802x694.jpg', './img/Beoplay802x694.jpg', './img/optimalins802x694.jpg'],
+                images: ['./img/rodeskweb1.jpg', './img/rodesk802x694.jpg', './img/rodeskmobile.jpg', './img/rodeskweb3.jpg'],
                 text: 'This site was built from the ground up for demonstration of my coding skills using HTML, CSS, Javascript, Angular, Jquery, Sketch'
             },
             {
                 img: './img/Beoplay802x694.jpg',
                 name: 'Beoplay Site Clone',
                 tech: 'HTML, CSS, Javascript, Angular, Jquery, Gulp, Sass, Node.js',
-                images: ['./img/ersite802x694.jpg', './img/rodesk802x694.jpg', './img/Beoplay802x694.jpg', './img/optimalins802x694.jpg'],
+                images: ['./img/Beoplay802x694.jpg', './img/beoplayweb2.jpg', './img/beoplayweb3.jpg', './img/beoplayweb4.jpg'],
                 text: 'This site was built from the ground up for demonstration of my coding skills using HTML, CSS, Javascript, Angular, Jquery, Gulp, Sass, Node.js, Affinity Suite, Heroku'
             },
             {
                 img: './img/optimalins802x694.jpg',
                 name: 'Optimal Insurance Site',
                 tech: 'HTML, CSS, SquareSpace CMS, Affinity Designer',
-                images: ['./img/ersite802x694.jpg', './img/rodesk802x694.jpg', './img/Beoplay802x694.jpg', './img/optimalins802x694.jpg'],
+                images: ['./img/optimalweb1.jpg', './img/optimalweb2.jpg', './img/optimalweb3.jpg', './img/optimalweb4.jpg'],
                 text: 'This site was built and designed for Optimal Insurance Choice using HTML, CSS, SquareSpace, Affinity Suite'
             },
             {
-                img: './img/emp802x694.jpg',
-                name: 'Empowered Emp Site',
-                tech: 'HTML, CSS, Responsive design, Affinity Designer',
-                images: ['./img/ersite802x694.jpg', './img/rodesk802x694.jpg', './img/Beoplay802x694.jpg', './img/optimalins802x694.jpg'],
-                text: 'This site was re-designed, had page updates, and made responsive for Empowered Employment utilizing there existing CMS and Affinity Suite'
+                img: './img/futureweb1.jpg',
+                name: 'Future App Mockup',
+                tech: 'HTML, CSS, Javascript, PHP, Apache, Wordpress, Affinity Suite',
+                images: ['./img/futureweb1.jpg', './img/futureweb2.jpg', './img/futureweb3.jpg', './img/futureweb4.jpg'],
+                text: 'This site was built from the ground up utilizing HTML, CSS, Javascript, Apache, PHP, Wordpress, Affinity Suite'
             },
             {
                 img: './img/slice8.jpg',
