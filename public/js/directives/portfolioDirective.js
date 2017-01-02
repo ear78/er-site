@@ -12,6 +12,8 @@ angular.module('myApp')
                     $(this).find('.img-thumb').toggleClass('img-thumb-fade');
                 })
 
+                
+
             }
         }
     })
