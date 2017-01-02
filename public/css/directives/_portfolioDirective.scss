@@ -228,15 +228,43 @@
     background-color: rgba(0,0,0,0.9);
     overflow: hidden;
     z-index: 10;
+    .tech-used {
+        color: white;
+        font-family: montserrat;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .portfolio-text {
+        color: white;
+        width: 65%;
+        max-width: 775px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .arrow-left {
+        position: absolute;
+        width: 40px;
+        top: 40%;
+        left: 0%;
+        transition: left .2s;
+    }
+    .arrow-right {
+        position: absolute;
+        width: 40px;
+        top: 40%;
+        right: 0%;
+        transition: right .2s;
+    }
 }
 
 .portfolio-box {
     text-align: center;
     padding-top: 15px;
     background: white;
-    width: 820px;
+    width: 725px;
     max-width: 90%;
-    margin: 85px auto;
+    margin: 40px auto 30px;
     padding-bottom: 15px;
     transition: margin .2s;
     border-radius: 3px;
@@ -285,7 +313,40 @@
             }
         }
     }
-    .portfolio-box {
-        margin: 60px auto;
+    .portfolio-modal {
+        .arrow-left {
+
+            left: 6%;
+        }
+        .arrow-right {
+
+            right: 6%;
+        }
+    }
+}
+
+@media(min-width: 1200px){
+    .portfolio-modal {
+        .arrow-left {
+
+            left: 9%;
+        }
+        .arrow-right {
+
+            right: 9%;
+        }
+    }
+}
+
+@media(min-width:1400px){
+    .portfolio-modal {
+        .arrow-left {
+
+            left: 11%;
+        }
+        .arrow-right {
+
+            right: 11%;
+        }
     }
 }

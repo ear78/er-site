@@ -21,5 +21,5 @@ angular.module('myApp', ['ui.router', 'ngAnimate'])
                 templateUrl: '../views/contact.html',
             })
 
-            $urlRouterProvider.otherwise('/');
+            $urlRouterProvider.otherwise('/home');
     });

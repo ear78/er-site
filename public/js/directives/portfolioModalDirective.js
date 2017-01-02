@@ -11,6 +11,10 @@ angular.module('myApp')
                 $('.close-menu').on('click', function(){
                     $(this).parent('.portfolio-modal').fadeOut("slow");
                 })
+
+                // $('.arrow-right, .arrow-left').on('click', function(){
+                //     $('.portfolio-box').fadeOut();
+                // })
             }
         }
     })
