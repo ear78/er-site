@@ -516,9 +516,17 @@ footer .social-icons a:hover {
 footer .site-map a:hover {
   color: #d3d3d3; }
 
+.resume .logo-container {
+  display: block;
+  width: 70px;
+  margin: 0 auto;
+  text-align: center;
+  background: none;
+  padding: 0;
+  min-height: 0; }
+
 .resume img {
   width: 60px;
-  display: block;
   margin: 0px auto 15px; }
 
 .resume .section-wrap {
@@ -793,6 +801,17 @@ footer .site-map a:hover {
 @media (min-width: 1440px) {
   .social-border {
     padding: 5% 4% 7%; } }
+
+.about .logo-container {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  background: none;
+  padding: 0;
+  min-height: 0; }
+  .about .logo-container img {
+    display: initial; }
 
 .about .main-title {
   text-align: center; }
@@ -1219,7 +1238,10 @@ footer .site-map a:hover {
     .main-header-container-alt .main-nav-container a:nth-child(4):hover {
       text-decoration: none;
       opacity: .9;
-      color: #fff; }
+      color: #101010;
+      background: #fff;
+      border: 1px solid #101010;
+      font-weight: 600; }
     .main-header-container-alt .main-nav-container a {
       color: #101010;
       transition: all .2s ease; }
@@ -1245,12 +1267,18 @@ footer .site-map a:hover {
       height: 1px;
       width: 0; }
     .main-header-container-alt .main-nav-container li {
+      font-weight: 600;
       margin: 12px 20px 9px;
       font-size: .65em;
       letter-spacing: 2px;
       text-transform: uppercase; }
   .main-header-container-alt .main-logo-container img {
     width: 35px; }
+
+.scroll-change-alt {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: all .8s ease; }
 
 @media (min-width: 760px) {
   .main-header-container-alt {

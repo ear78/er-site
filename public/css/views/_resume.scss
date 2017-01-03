@@ -1,10 +1,16 @@
-// .resume {
-//     padding-top: 90px;
-// }
+.resume .logo-container {
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    text-align: center;
+    background: none;
+    padding: 0;
+    min-height: 0;
+}
 
 .resume img {
     width: 60px;
-    display: block;
+    // display: block;
     margin: 0px auto 15px;
 }
 

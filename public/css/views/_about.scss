@@ -1,4 +1,17 @@
 
+.about .logo-container {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    background: none;
+    padding: 0;
+    min-height: 0;
+    img {
+        display: initial;
+    }
+
+}
 
 .about .main-title {
     text-align: center;
