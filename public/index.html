@@ -30,7 +30,7 @@
             <mobile-menu-directive></mobile-menu-directive>
 
             <!-- DESKTOP HEADER MENU -->
-            <header class="main-header-container" menu-scroll>
+            <header ng-show="$state.current.name === 'home'" class="main-header-container" menu-scroll>
                 <div class="main-logo-container">
                     <!-- <img ng-src="./img/earlogo1white.svg"/> -->
                 </div>
@@ -43,6 +43,9 @@
                     <a href="mailto:ear78@aol.com"><li>Contact</li></a>
                 </nav>
             </header>
+
+            <!-- ALTERNATE HEADER FOR PAGES THAT HAVE WHITE BACKGROUND -->
+            <desktop-header-alt-component ng-hide="$state.current.name === 'home'"></desktop-header-alt-component>
 
             <!-- UI VIEW FOR ANGULAR -->
             <div ui-view autoscroll="true" ></div>
@@ -98,6 +101,7 @@
         <script src="./js/directives/contactSectionDirective.js"></script>
         <script src="./js/directives/portfolioDropDirective.js"></script>
         <script src="./js/directives/socialIconComponent.js"></script>
+        <script src="./js/directives/desktopHeaderAltComponent.js"></script>
         <script src="./js/directives/clickScrollDirective.js"></script>
         <script src="./js/directives/titleFadeDirective.js"></script>
         <script src="./js/directives/portfolioModalDirective.js"></script>
