@@ -92,6 +92,10 @@ h4 {
   width: 95%;
   margin: 0 auto; }
 
+.desktop-wide {
+  max-width: 1300px;
+  margin: 90px auto; }
+
 .desktop-wrap {
   max-width: 960px;
   margin: 0 auto; }
@@ -837,7 +841,9 @@ footer .site-map a:hover {
   font-family: montserrat; }
 
 .content {
-  line-height: 1.3; }
+  line-height: 1.3;
+  min-height: 375px;
+  transition: all .2s; }
   .content .born {
     font-family: 'montserrat', sans-serif; }
 
@@ -849,6 +855,11 @@ footer .site-map a:hover {
     float: left; }
   .about .subtitle {
     margin-bottom: 80px; } }
+
+@media (min-width: 1000px) {
+  .content {
+    line-height: 1.3;
+    min-height: 400px; } }
 
 .close-menu {
   position: absolute;
@@ -1283,3 +1294,7 @@ footer .site-map a:hover {
 @media (min-width: 760px) {
   .main-header-container-alt {
     display: flex; } }
+
+@media (min-width: 1200px) {
+  .main-header-container-alt {
+    padding-right: 2.5%; } }
