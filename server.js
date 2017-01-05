@@ -4,7 +4,6 @@ var session = require('express-session');
 var cors = require('cors');
 var massive = require('massive');
 var config = require('./config.json');
-var port = process.env.PORT || 4000;
 
 var app = module.exports = express();
 var db = massive.connectSync({
@@ -20,6 +19,6 @@ app.use(express.static("./public"));
 
 
 
-app.listen(port, function(){
-    console.log('port is on', port);
+app.listen(config.port, function(){
+    console.log('port is on', config.port);
 })
