@@ -2,8 +2,9 @@
   "name": "er-site",
   "version": "1.0.0",
   "description": "Portfolio site designed and built from the ground up with HTML, CSS, Javascript, Jquery, Gulp, Sass.",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
