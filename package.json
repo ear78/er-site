@@ -2,7 +2,11 @@
   "name": "er-site",
   "version": "1.0.0",
   "description": "Portfolio site designed and built from the ground up with HTML, CSS, Javascript, Jquery, Gulp, Sass.",
-  "main": "server.js",
+  "main": "app.js",
+  "engines": {
+      "node": "6.3.1",
+      "npm": "3.10.3"
+  },
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
