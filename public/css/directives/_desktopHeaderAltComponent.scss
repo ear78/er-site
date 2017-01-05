@@ -1,6 +1,5 @@
 .main-header-container-alt {
     display: none;
-    // background: black;
     position: fixed;
     width: 100%;
     top: 0px;
@@ -81,5 +80,11 @@
 @media(min-width:760px) {
     .main-header-container-alt {
         display: flex;
+    }
+}
+
+@media(min-width: 1200px){
+    .main-header-container-alt {
+        padding-right: 2.5%;
     }
 }
