@@ -11,13 +11,13 @@ var app = express();
 // });
 
 
-
+app.use(express.static("./public"));
 app.set('port', (process.env.PORT || 5050));
 
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use(express.static("./public"));
+// app.use(express.static("./public"));
 
 
 // app.get('/', function(request,response){
