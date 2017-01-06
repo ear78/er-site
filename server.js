@@ -20,7 +20,9 @@ app.use(bodyParser.json());
 app.use(express.static("./public"));
 
 
-
+app.get('/', function(request,response){
+    response.send('hello world');
+})
 
 
 app.listen(port, function(){
