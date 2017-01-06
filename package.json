@@ -32,7 +32,8 @@
     "url": "https://github.com/ear78/er-site/issues"
   },
   "engines": {
-    "node": "6.3.1"
+    "node": "6.3.1",
+    "npm": "3.10.3"
   },
   "homepage": "https://github.com/ear78/er-site#readme"
 }
