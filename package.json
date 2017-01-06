@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Portfolio site designed and built from the ground up with HTML, CSS, Javascript, Jquery, Gulp, Sass.",
   "main": "server.js",
+  "engines": {
+    "node": "6.3.1",
+    "npm": "3.10.3"
+  },
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,11 +26,10 @@
     "cors": "^2.8.1",
     "express": "^4.14.0",
     "express-session": "^1.14.2",
+    "gulp-concat": "^2.6.1",
     "gulp-install": "^0.6.0",
     "gulp-sass": "^3.0.0",
+    "gulp-useref": "^3.1.2",
     "massive": "^2.5.0"
-  },
-  "devDependencies": {
-    "gulp-concat": "^2.6.1"
   }
 }

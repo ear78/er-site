@@ -1,0 +1,6 @@
+{
+    "name": "er-site",
+    "description": "Portfolio site built by Elliot Richardson",
+    "repository": "https://github.com/ear78/er-site.git",
+    "keyword": ["node", "express", "static"]
+}

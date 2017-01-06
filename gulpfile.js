@@ -1,12 +1,14 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
+var useref = require('gulp-useref');
 
 gulp.task('sass', function(){
     return gulp.src("./public/css/main.scss")
     .pipe(sass())
     .pipe(gulp.dest('./public/build/css'));
 });
+
 
 //watch task
 gulp.task('watch', function(){
