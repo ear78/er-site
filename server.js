@@ -21,7 +21,7 @@ app.use(express.static("./public"));
 
 
 app.get('/', function(request,response){
-    response.send('hello world');
+    response.sendFile(path.join(__dirname, '../public/index.html');
 })
 
 
