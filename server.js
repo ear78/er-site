@@ -1,5 +1,5 @@
 var express = require('express');
-// var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 // var session = require('express-session');
 var cors = require('cors');
 // var massive = require('massive');
@@ -12,7 +12,7 @@ var app = express();
 
 
 app.use(express.static("./public"));
-// app.set('port', (process.env.PORT || 5050));
+app.set('port', (process.env.PORT || 5050));
 
 app.use(cors());
 // app.use(bodyParser.json());
