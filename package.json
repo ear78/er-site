@@ -1,36 +1,36 @@
 {
   "name": "er-site",
   "version": "1.0.0",
-  "description": "Portfolio site designed and built from the ground up with HTML, CSS, Javascript, Jquery, Gulp, Sass.",
+  "description": "Elliot Richardson portfolio built from the ground up with HTML, CSS, Javascript, Jquery, Angular, Node.js, Gulp, Sass",
   "main": "server.js",
-  "engines": {
-    "node": "6.3.1",
-    "npm": "3.10.3"
+  "dependencies": {
+    "express": "^4.14.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-install": "^0.6.0",
+    "gulp-useref": "^3.1.2"
   },
+  "devDependencies": {},
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "postinstall": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "gulp"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ear78/er-site.git"
   },
-  "author": "",
+  "keywords": [
+    "node",
+    "express",
+    "static"
+  ],
+  "author": "Elliot Richardson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ear78/er-site/issues"
   },
-  "homepage": "https://github.com/ear78/er-site#readme",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "cors": "^2.8.1",
-    "express": "^4.14.0",
-    "express-session": "^1.14.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-install": "^0.6.0",
-    "gulp-sass": "^3.0.0",
-    "gulp-useref": "^3.1.2",
-    "massive": "^2.5.0"
-  }
+  "engines":{
+      "node": "6.3.1",
+  },
+  "homepage": "https://github.com/ear78/er-site#readme"
 }
