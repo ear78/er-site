@@ -4,6 +4,8 @@
   "description": "Elliot Richardson portfolio built from the ground up with HTML, CSS, Javascript, Jquery, Angular, Node.js, Gulp, Sass",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
     "express": "^4.14.0",
     "gulp-concat": "^2.6.1",
     "gulp-install": "^0.6.0",
@@ -29,8 +31,8 @@
   "bugs": {
     "url": "https://github.com/ear78/er-site/issues"
   },
-  "engines":{
-      "node": "6.3.1",
+  "engines": {
+    "node": "6.3.1"
   },
   "homepage": "https://github.com/ear78/er-site#readme"
 }
