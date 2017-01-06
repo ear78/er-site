@@ -17,12 +17,12 @@ app.set('port', (process.env.PORT || 5050));
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use(express.static("./public"));
+app.use(express.static(__dirname + "./public"));
 
 
-app.get('/', function(request,response){
-    response.sendFile(path.join(__dirname, '../public/index.html');
-})
+// app.get('/', function(request,response){
+//     response.sendFile(path.join(__dirname, '../public/index.html');
+// })
 
 
 app.listen(port, function(){
