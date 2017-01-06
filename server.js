@@ -1,7 +1,7 @@
 var express = require('express');
 // var bodyParser = require('body-parser');
 // var session = require('express-session');
-// var cors = require('cors');
+var cors = require('cors');
 // var massive = require('massive');
 var port = 5050;
 
@@ -14,7 +14,7 @@ var app = express();
 app.use(express.static("./public"));
 // app.set('port', (process.env.PORT || 5050));
 
-// app.use(cors());
+app.use(cors());
 // app.use(bodyParser.json());
 
 // app.use(express.static("./public"));
